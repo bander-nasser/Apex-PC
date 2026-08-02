@@ -1,7 +1,10 @@
 {
-    "name":  "Apex PC",
-    "repository":  "https://github.com/SallaApp/theme-raed",
-    "author_email":  "support@salla.sa",
+    "name":  {
+                 "ar":  "أبيكس بي سي",
+                 "en":  "Apex PC"
+             },
+    "repository":  "https://github.com/bander-nasser/Apex-PC",
+    "author_email":  "apexpcsupport@gmail.com",
     "features":  [
                      "mega-menu",
                      "fonts",
@@ -26,25 +29,25 @@
                          "id":  "squar_photo_bg_image_size",
                          "type":  "items",
                          "format":  "dropdown-list",
-                         "label":  "Ø·Ø±ÙŠÙ‚Ø© Ø¹Ø±Ø¶ Ø§Ù„ØµÙˆØ± ÙÙŠ Ù‚Ø³Ù… Ù‚Ø§Ø¦Ù…Ø© Ø¹Ù†Ø§ØµØ± ",
+                         "label":  "طريقة عرض الصور في قسم قائمة عناصر ",
                          "description":  null,
                          "labelHTML":  null,
                          "icon":  "sicon-list",
                          "selected":  [
                                           {
-                                              "label":  "Ø§Ø¸Ù‡Ø§Ø± Ø§Ù„ØµÙˆØ±Ø© ÙƒØ§Ù…Ù„Ø©Ù‹ ÙÙŠ Ø§Ù„Ù…Ù†ØªØµÙ (Contain)",
+                                              "label":  "اظهار الصورة كاملةً في المنتصف (Contain)",
                                               "value":  "contain",
                                               "key":  "f4adec13-6e4c-654b-b978-b2807935ced9"
                                           }
                                       ],
                          "options":  [
                                          {
-                                             "label":  "ØªØºØ·ÙŠØ© Ø§Ù„ØµÙˆØ±Ø© ÙƒØ§Ù…Ù„ Ø§Ù„Ù…Ø³Ø§Ø­Ø© Ù…Ø¹ Ø§Ù„Ù…Ø­Ø§ÙØ¸Ø© Ø¹Ù„Ù‰ Ø£Ø¨Ø¹Ø§Ø¯ Ø§Ù„ØµÙˆØ±Ø© (Cover)",
+                                             "label":  "تغطية الصورة كامل المساحة مع المحافظة على أبعاد الصورة (Cover)",
                                              "value":  "cover",
                                              "key":  "e9c8ea8f-c5c6-234e-935-3bce269afde4"
                                          },
                                          {
-                                             "label":  "Ø§Ø¸Ù‡Ø§Ø± Ø§Ù„ØµÙˆØ±Ø© ÙƒØ§Ù…Ù„Ø©Ù‹ ÙÙŠ Ø§Ù„Ù…Ù†ØªØµÙ (Contain)",
+                                             "label":  "اظهار الصورة كاملةً في المنتصف (Contain)",
                                              "value":  "contain",
                                              "key":  "f4adec13-6e4c-654b-b978-b2807935ced9"
                                          }
@@ -55,7 +58,7 @@
                      {
                          "type":  "boolean",
                          "icon":  "sicon-toggle-off",
-                         "label":  "ÙˆØ¶Ø¹ Ø¹Ù…ÙˆØ¯ÙŠ Ù„Ù„Ù…Ù†ØªØ¬Ø§Øª ÙÙŠ Ù…Ø±Ø¨Ø¹ Ø§Ù„Ù…Ù†ØªØ¬Ø§Øª Ø§Ù„Ø«Ø§Ø¨ØªØ© ÙÙŠ Ø§Ù„ØµÙØ­Ø© Ø§Ù„Ø±Ø¦ÙŠØ³ÙŠØ©",
+                         "label":  "وضع عمودي للمنتجات في مربع المنتجات الثابتة في الصفحة الرئيسية",
                          "description":  null,
                          "id":  "vertical_fixed_products",
                          "format":  "switch",
@@ -66,7 +69,7 @@
                      {
                          "type":  "boolean",
                          "id":  "is_more_button_enabled",
-                         "label":  "Ø¹Ø±Ø¶ (Ø²Ø± Ø§Ù„ÙƒÙ„) ÙÙŠ Ø§Ù„ØµÙØ­Ø© Ø§Ù„Ø±Ø¦ÙŠØ³ÙŠØ©",
+                         "label":  "عرض (زر الكل) في الصفحة الرئيسية",
                          "format":  "switch"
                      },
                      {
@@ -78,13 +81,13 @@
                          "type":  "static",
                          "format":  "title",
                          "id":  "static-label2",
-                         "value":  "\u003cdiv class=\u0027rounded-lg\u0027 style=\u0027background-color: #21636d; display: flex; justify-content: center; align-items: center;padding: 15px;margin-bottom: 20px !important; flex-direction: column;gap: 15px;\u0027\u003e\u003ch6 style=\u0027color: #ffffff;font-size: 15px; font-weight: bold;\u0027\u003e Ø®ÙŠØ§Ø±Ø§Øª Ø£Ø¹Ù„Ù‰ Ø§Ù„ØµÙØ­Ø©\u003c/h6\u003e\u003c/div\u003e",
+                         "value":  "\u003cdiv class=\u0027rounded-lg\u0027 style=\u0027background-color: #21636d; display: flex; justify-content: center; align-items: center;padding: 15px;margin-bottom: 20px !important; flex-direction: column;gap: 15px;\u0027\u003e\u003ch6 style=\u0027color: #ffffff;font-size: 15px; font-weight: bold;\u0027\u003e خيارات أعلى الصفحة\u003c/h6\u003e\u003c/div\u003e",
                          "variant":  "h6"
                      },
                      {
                          "id":  "header_is_sticky",
-                         "label":  "ØªØ«Ø¨Øª Ø§Ù„Ù‚Ø§Ø¦Ù…Ø© Ø§Ù„Ø±Ø¦ÙŠØ³ÙŠØ© Ø£Ø¹Ù„Ù‰ Ø§Ù„ØµÙØ­Ø© Ø¹Ù†Ø¯ Ø§Ù„ØªÙ…Ø±ÙŠØ± Ù„Ø£Ø³ÙÙ„",
-                         "description":  "ÙŠÙÙ†ØµØ­ Ø¨Ø§Ù„ØºØ§Ø¡ ØªÙØ¹ÙŠÙ„Ù‡Ø§ ÙÙŠ Ø­Ø§Ù„Ø© ÙˆØ¬ÙˆØ¯ Ø¹Ù†Ø§ØµØ± ÙƒØ«ÙŠØ±Ø© ÙÙŠ Ø§Ù„Ù‚Ø§Ø¦Ù…Ø© Ø§Ù„Ù…Ù†Ø³Ø¯Ù„Ø©",
+                         "label":  "تثبت القائمة الرئيسية أعلى الصفحة عند التمرير لأسفل",
+                         "description":  "يُنصح بالغاء تفعيلها في حالة وجود عناصر كثيرة في القائمة المنسدلة",
                          "type":  "boolean",
                          "icon":  "sicon-toggle-off",
                          "format":  "switch",
@@ -95,7 +98,7 @@
                      {
                          "type":  "boolean",
                          "icon":  "sicon-toggle-off",
-                         "label":  "Ø´Ø±ÙŠØ· Ø¹Ù„ÙˆÙŠ Ø¯Ø§ÙƒÙ†",
+                         "label":  "شريط علوي داكن",
                          "description":  null,
                          "id":  "topnav_is_dark",
                          "format":  "switch",
@@ -106,8 +109,8 @@
                      {
                          "type":  "boolean",
                          "icon":  "sicon-toggle-off",
-                         "label":  "Ø¹Ø±Ø¶ Ø±ÙˆØ§Ø¨Ø· Ø§Ù„ØµÙØ­Ø§Øª Ø§Ù„Ù‡Ø§Ù…Ø© ÙÙŠ Ø§Ù„Ø´Ø±ÙŠØ· Ø§Ù„Ø¹Ù„ÙˆÙŠ",
-                         "description":  "Ù…Ø«Ù„ ØµÙØ­Ø© Ø§Ù„Ù‡Ø¨ÙˆØ· ØŒ Ø§Ù„Ù…Ø¯ÙˆÙ†Ø© ØŒØ§Ù„ØµÙØ­Ø§Øª Ø§Ù„ØªØ¹Ø±ÙŠÙÙŠØ©",
+                         "label":  "عرض روابط الصفحات الهامة في الشريط العلوي",
+                         "description":  "مثل صفحة الهبوط ، المدونة ،الصفحات التعريفية",
                          "id":  "important_links",
                          "format":  "switch",
                          "required":  false,
@@ -117,8 +120,8 @@
                      {
                          "type":  "boolean",
                          "icon":  "sicon-toggle-off",
-                         "label":  "ØªÙØ¹ÙŠÙ„ Ù‚Ø§Ø¦Ù…Ø© Ø§Ù„Ù…Ø²ÙŠØ¯ ÙÙŠ Ø§Ù„Ù‚Ø§Ø¦Ù…Ø© Ø§Ù„Ø±Ø¦ÙŠØ³ÙŠØ©",
-                         "description":  "Ø¹Ù†Ø¯ ØªÙØ¹ÙŠÙ„Ù‡Ø§ØŒ Ø³ØªØ¸Ù‡Ø± Ø§Ù„Ø±ÙˆØ§Ø¨Ø· Ø§Ù„Ø¥Ø¶Ø§ÙÙŠØ© ÙÙŠ Ù‚Ø§Ø¦Ù…Ø© Ù…Ù†Ø³Ø¯Ù„Ø© ØªØ³Ù…Ù‰ \u0027Ø§Ù„Ù…Ø²ÙŠØ¯\u0027 Ø¹Ù†Ø¯ Ø¹Ø¯Ù… ÙˆØ¬ÙˆØ¯ Ù…Ø³Ø§Ø­Ø© ÙƒØ§ÙÙŠØ©",
+                         "label":  "تفعيل قائمة المزيد في القائمة الرئيسية",
+                         "description":  "عند تفعيلها، ستظهر الروابط الإضافية في قائمة منسدلة تسمى \u0027المزيد\u0027 عند عدم وجود مساحة كافية",
                          "id":  "enable_more_menu",
                          "format":  "switch",
                          "required":  false,
@@ -134,13 +137,13 @@
                          "type":  "static",
                          "format":  "title",
                          "id":  "static-label4",
-                         "value":  "\u003cdiv class=\u0027rounded-lg\u0027 style=\u0027background-color: #21636d; display: flex; justify-content: center; align-items: center;padding: 15px;margin-bottom: 20px !important; flex-direction: column;gap: 15px;\u0027\u003e\u003ch6 style=\u0027color: #ffffff;font-size: 15px; font-weight: bold;\u0027\u003e Ø®ÙŠØ§Ø±Ø§Øª Ø£Ø³ÙÙ„ Ø§Ù„ØµÙØ­Ø©\u003c/h6\u003e\u003c/div\u003e",
+                         "value":  "\u003cdiv class=\u0027rounded-lg\u0027 style=\u0027background-color: #21636d; display: flex; justify-content: center; align-items: center;padding: 15px;margin-bottom: 20px !important; flex-direction: column;gap: 15px;\u0027\u003e\u003ch6 style=\u0027color: #ffffff;font-size: 15px; font-weight: bold;\u0027\u003e خيارات أسفل الصفحة\u003c/h6\u003e\u003c/div\u003e",
                          "variant":  "h6"
                      },
                      {
                          "type":  "boolean",
                          "icon":  "sicon-toggle-off",
-                         "label":  "Ø§Ù„ÙˆØ¶Ø¹ Ø§Ù„Ø¯Ø§ÙƒÙ†",
+                         "label":  "الوضع الداكن",
                          "description":  null,
                          "id":  "footer_is_dark",
                          "format":  "switch",
@@ -157,13 +160,13 @@
                          "type":  "static",
                          "format":  "title",
                          "id":  "static-label6",
-                         "value":  "\u003cdiv class=\u0027rounded-lg\u0027 style=\u0027background-color: #21636d; display: flex; justify-content: center; align-items: center;padding: 15px;margin-bottom: 20px !important; flex-direction: column;gap: 15px;\u0027\u003e\u003ch6 style=\u0027color: #ffffff;font-size: 15px; font-weight: bold;\u0027\u003e Ø®ÙŠØ§Ø±Ø§Øª ØµÙØ­Ø© Ø§Ù„Ù…Ù†ØªØ¬\u003c/h6\u003e\u003c/div\u003e",
+                         "value":  "\u003cdiv class=\u0027rounded-lg\u0027 style=\u0027background-color: #21636d; display: flex; justify-content: center; align-items: center;padding: 15px;margin-bottom: 20px !important; flex-direction: column;gap: 15px;\u0027\u003e\u003ch6 style=\u0027color: #ffffff;font-size: 15px; font-weight: bold;\u0027\u003e خيارات صفحة المنتج\u003c/h6\u003e\u003c/div\u003e",
                          "variant":  "h6"
                      },
                      {
                          "type":  "boolean",
                          "icon":  "sicon-toggle-off",
-                         "label":  "Ø¥Ø¸Ù‡Ø§Ø± Ù…Ø³Ø§Ø± Ø§Ù„ØªÙ†Ù‚Ù„ ÙÙŠ ØµÙØ­Ø© Ø§Ù„Ù…Ù†ØªØ¬",
+                         "label":  "إظهار مسار التنقل في صفحة المنتج",
                          "description":  null,
                          "id":  "product_show_breadcrumbs",
                          "format":  "switch",
@@ -174,7 +177,7 @@
                      {
                          "type":  "boolean",
                          "icon":  "sicon-toggle-off",
-                         "label":  "Ø¥Ø¸Ù‡Ø§Ø± Ù…Ø³Ø§Ø± Ø§Ù„ØªÙ†Ù‚Ù„ ÙÙŠ ØµÙØ­Ø© Ù‚Ø§Ø¦Ù…Ø© Ø§Ù„Ù…Ù†ØªØ¬Ø§Øª",
+                         "label":  "إظهار مسار التنقل في صفحة قائمة المنتجات",
                          "description":  null,
                          "id":  "product_index_show_breadcrumbs",
                          "format":  "switch",
@@ -185,7 +188,7 @@
                      {
                          "type":  "boolean",
                          "icon":  "sicon-toggle-off",
-                         "label":  "ØªÙØ¹ÙŠÙ„ Ø¥Ø´Ø¹Ø§Ø± Ø§Ù„Ø¥Ø¶Ø§ÙØ© Ù„Ù„Ø³Ù„Ø© Ø§Ù„Ù…Ø­Ø³Ù†",
+                         "label":  "تفعيل إشعار الإضافة للسلة المحسن",
                          "description":  null,
                          "id":  "enable_add_product_toast",
                          "format":  "switch",
@@ -196,8 +199,8 @@
                      {
                          "type":  "boolean",
                          "icon":  "sicon-toggle-off",
-                         "label":  "Ø¥Ø¸Ù‡Ø§Ø± Ø²Ø± \"Ø£Ø¹Ù„Ù…Ù†ÙŠ Ø¹Ù†Ø¯ Ø§Ù„ØªÙˆÙØ±\" ÙÙŠ Ø¨Ø·Ø§Ù‚Ø© Ø§Ù„Ù…Ù†ØªØ¬",
-                         "description":  "ÙŠØ¸Ù‡Ø± Ø²Ø± Ø¥Ø´Ø¹Ø§Ø± Ø§Ù„ØªÙˆÙØ± ÙÙŠ Ø¨Ø·Ø§Ù‚Ø§Øª Ø§Ù„Ù…Ù†ØªØ¬Ø§Øª Ø§Ù„ØªÙŠ Ù†ÙØ°Øª ÙƒÙ…ÙŠØªÙ‡Ø§",
+                         "label":  "إظهار زر \"أعلمني عند التوفر\" في بطاقة المنتج",
+                         "description":  "يظهر زر إشعار التوفر في بطاقات المنتجات التي نفذت كميتها",
                          "id":  "notify_when_available_in_card",
                          "format":  "switch",
                          "required":  false,
@@ -207,7 +210,7 @@
                      {
                          "type":  "boolean",
                          "icon":  "sicon-toggle-off",
-                         "label":  "ØªØ«Ø¨ÙŠØª Ø²Ø± Ø§Ù„Ø¥Ø¶Ø§ÙØ© ÙˆØ§Ù„ÙƒÙ…ÙŠØ© Ø£Ø³ÙÙ„ Ø´Ø§Ø´Ø© Ø§Ù„Ø¬ÙˆØ§Ù„",
+                         "label":  "تثبيت زر الإضافة والكمية أسفل شاشة الجوال",
                          "description":  null,
                          "id":  "sticky_add_to_cart",
                          "format":  "switch",
@@ -218,7 +221,7 @@
                      {
                          "type":  "boolean",
                          "icon":  "sicon-toggle-off",
-                         "label":  "Ø§Ø¸Ù‡Ø§Ø± Ø§Ù„ÙˆØ³ÙˆÙ…",
+                         "label":  "اظهار الوسوم",
                          "description":  null,
                          "id":  "show_tags",
                          "format":  "switch",
@@ -230,25 +233,25 @@
                          "id":  "slider_background_size",
                          "type":  "items",
                          "format":  "dropdown-list",
-                         "label":  "Ø·Ø±ÙŠÙ‚Ø© Ø¹Ø±Ø¶ Ø§Ù„ØµÙˆØ± ÙÙŠ Ø³Ù„ÙŠØ¯Ø± ØµÙˆØ± Ø§Ù„Ù…Ù†ØªØ¬",
+                         "label":  "طريقة عرض الصور في سليدر صور المنتج",
                          "description":  null,
                          "labelHTML":  null,
                          "icon":  "sicon-list",
                          "selected":  [
                                           {
-                                              "label":  "Ø§Ø¸Ù‡Ø§Ø± Ø§Ù„ØµÙˆØ±Ø© ÙƒØ§Ù…Ù„Ø©Ù‹ ÙÙŠ Ø§Ù„Ù…Ù†ØªØµÙ (Contain)",
+                                              "label":  "اظهار الصورة كاملةً في المنتصف (Contain)",
                                               "value":  "contain",
                                               "key":  "f4adec13-6e4c-433b-b141-b2807935ced9"
                                           }
                                       ],
                          "options":  [
                                          {
-                                             "label":  "ØªØºØ·ÙŠØ© Ø§Ù„ØµÙˆØ±Ø© ÙƒØ§Ù…Ù„ Ø§Ù„Ù…Ø³Ø§Ø­Ø© Ù…Ø¹ Ø§Ù„Ù…Ø­Ø§ÙØ¸Ø© Ø¹Ù„Ù‰ Ø£Ø¨Ø¹Ø§Ø¯ Ø§Ù„ØµÙˆØ±Ø© (Cover)",
+                                             "label":  "تغطية الصورة كامل المساحة مع المحافظة على أبعاد الصورة (Cover)",
                                              "value":  "cover",
                                              "key":  "e9c8ea8f-c5c6-438e-9d45-3bce269afde4"
                                          },
                                          {
-                                             "label":  "Ø§Ø¸Ù‡Ø§Ø± Ø§Ù„ØµÙˆØ±Ø© ÙƒØ§Ù…Ù„Ø©Ù‹ ÙÙŠ Ø§Ù„Ù…Ù†ØªØµÙ (Contain)",
+                                             "label":  "اظهار الصورة كاملةً في المنتصف (Contain)",
                                              "value":  "contain",
                                              "key":  "f4adec13-6e4c-433b-b141-b2807935ced9"
                                          }
@@ -259,8 +262,8 @@
                      {
                          "type":  "boolean",
                          "icon":  "sicon-toggle-off",
-                         "label":  "ØªÙƒØ¨ÙŠØ± Ø§Ù„ØµÙˆØ± ÙÙŠ Ø³Ù„ÙŠØ¯Ø± ØµÙˆØ± Ø§Ù„Ù…Ù†ØªØ¬",
-                         "description":  "Ù‡Ø°Ù‡ Ø§Ù„Ø®Ø§ØµÙŠØ© ØªÙ…ÙƒÙ†Ùƒ Ù…Ù† ØªÙƒØ¨ÙŠØ± Ø§Ù„ØµÙˆØ±Ø© Ù„ØªØ³Ù‡Ù„ Ø±Ø¤ÙŠØ© Ø§Ù„Ù…Ø²ÙŠØ¯ Ù…Ù† Ø§Ù„ØªÙØ§ØµÙŠÙ„ Ø¨Ù‡Ø§",
+                         "label":  "تكبير الصور في سليدر صور المنتج",
+                         "description":  "هذه الخاصية تمكنك من تكبير الصورة لتسهل رؤية المزيد من التفاصيل بها",
                          "id":  "imageZoom",
                          "format":  "switch",
                          "required":  false,
@@ -273,7 +276,7 @@
                            "key":  "186b3f4f-25cf-4d3c-abca-cef7eed6f0ab",
                            "title":  {
                                          "en":  "Enhances Animated Images",
-                                         "ar":  " ØµÙˆØ± Ù…ØªØ­Ø±ÙƒØ© (Ù…Ø­Ø³Ù†Ø©)"
+                                         "ar":  " صور متحركة (محسنة)"
                                      },
                            "icon":  "sicon-image-carousel",
                            "path":  "home.enhanced-slider",
@@ -290,7 +293,7 @@
                                               "type":  "static",
                                               "format":  "description",
                                               "id":  "enhance-slider-note",
-                                              "value":  "\u003cdiv \u003eÙ‡Ø°Ø§ Ø§Ù„Ø¹Ù†ØµØ± ØºÙŠØ± Ù…Ù†Ø§Ø³Ø¨ Ù„Ø¹Ø±Ø¶ Ø§Ù„Ø¨Ù†Ø±Ø§ØªØŒ ÙŠÙ…ÙƒÙ†Ùƒ Ø§Ø³ØªØ®Ø¯Ø§Ù… Ø¹Ù†ØµØ± \u003cstrong\u003eØµÙˆØ± Ù…ØªØ­Ø±ÙƒØ©\u003c/strong\u003e Ø¨Ø¯Ù„Ø§Ù‹ Ù…Ù†Ù‡ Ù„ØªØ¸Ù‡Ø± ØµÙˆØ±Ø© Ø§Ù„Ø¨Ù†Ø± Ø¨Ø´ÙƒÙ„ ÙƒØ§Ù…Ù„\u003c/div\u003e"
+                                              "value":  "\u003cdiv \u003eهذا العنصر غير مناسب لعرض البنرات، يمكنك استخدام عنصر \u003cstrong\u003eصور متحركة\u003c/strong\u003e بدلاً منه لتظهر صورة البنر بشكل كامل\u003c/div\u003e"
                                           },
                                           {
                                               "id":  "slides",
@@ -300,18 +303,18 @@
                                               "minLength":  1,
                                               "maxLength":  10,
                                               "label":  null,
-                                              "item_label":  "ØµÙˆØ±Ø©",
+                                              "item_label":  "صورة",
                                               "value":  [
                                                             {
                                                                 "slides.image":  "https://cdn.salla.sa/ZrBEO/MopzhoqpTkDObcKc8Q8n77AuydanfsGXdZO7iinH.jpg",
-                                                                "slides.title":  "Ø±ÙˆÙÙ‘Ø¬ Ù„Ù…Ù†ØªØ¬Ø§ØªÙƒ ÙƒØµÙˆØ± Ù…ØªØ­Ø±ÙƒØ©",
-                                                                "slides.description":  "Ø§Ø¹Ø±Ø¶ Ø§Ù„Ù…Ù†ØªØ¬Ø§Øª Ø§Ù„ØªÙŠ ØªÙˆØ¯ Ø¥Ø¨Ø±Ø§Ø²Ù‡Ø§ Ù„Ø²ÙˆÙ‘Ø§Ø± Ù…ØªØ¬Ø±Ùƒ ÙÙŠ Ù‡Ø°Ù‡ Ø§Ù„Ù…Ø³Ø§Ø­Ø©",
+                                                                "slides.title":  "روِّج لمنتجاتك كصور متحركة",
+                                                                "slides.description":  "اعرض المنتجات التي تود إبرازها لزوّار متجرك في هذه المساحة",
                                                                 "slides.without_overlay":  false
                                                             },
                                                             {
                                                                 "slides.image":  "https://cdn.salla.sa/ZrBEO/3gOhYSaIhaHxhH2IHWxJYDl9JHwxP6dGKiZFSq4K.jpg",
-                                                                "slides.title":  "Ø´Ø¬Ù‘Ø¹ Ø²ÙˆØ§Ø± Ù…ØªØ¬Ø±Ùƒ Ø¹Ù„Ù‰ Ø§Ù„Ø´Ø±Ø§Ø¡ Ø¹Ø¨Ø± Ø¹Ø±ÙˆØ¶ Ø®Ø§ØµØ©",
-                                                                "slides.description":  "Ø§Ø¹Ø±Ø¶ Ø§Ù„Ù…Ù†ØªØ¬Ø§Øª Ø§Ù„ØªÙŠ ØªÙˆØ¯ Ø¥Ø¨Ø±Ø§Ø²Ù‡Ø§ Ù„Ø²ÙˆÙ‘Ø§Ø± Ù…ØªØ¬Ø±Ùƒ ÙÙŠ Ù‡Ø°Ù‡ Ø§Ù„Ù…Ø³Ø§Ø­Ø©",
+                                                                "slides.title":  "شجّع زوار متجرك على الشراء عبر عروض خاصة",
+                                                                "slides.description":  "اعرض المنتجات التي تود إبرازها لزوّار متجرك في هذه المساحة",
                                                                 "slides.without_overlay":  false
                                                             }
                                                         ],
@@ -321,23 +324,23 @@
                                                                  "icon":  "sicon-image",
                                                                  "value":  null,
                                                                  "id":  "slides.image",
-                                                                 "label":  "ØµÙˆØ±Ø© Ø§Ù„Ø¨Ù†Ø±",
+                                                                 "label":  "صورة البنر",
                                                                  "format":  "image",
                                                                  "required":  true,
                                                                  "placeholder":  null,
-                                                                 "description":  "* Ø§Ù„Ù…Ù‚Ø§Ø³ Ø§Ù„Ù…Ù†Ø§Ø³Ø¨ Ù„Ù„ØµÙˆØ±Ø© Ù‡Ùˆ 900Ã—600 Ø¨ÙƒØ³Ù„"
+                                                                 "description":  "* المقاس المناسب للصورة هو 900×600 بكسل"
                                                              },
                                                              {
                                                                  "type":  "string",
                                                                  "icon":  "sicon-format-text-alt",
-                                                                 "label":  "Ø¹Ù†ÙˆØ§Ù† Ø±Ø¦ÙŠØ³ÙŠ",
+                                                                 "label":  "عنوان رئيسي",
                                                                  "multilanguage":  true,
                                                                  "id":  "slides.title",
                                                                  "value":  null,
                                                                  "required":  false,
                                                                  "format":  "text",
-                                                                 "description":  "ÙŠØªÙ… Ø¹Ø±Ø¶Ù‡ Ø¹Ù„Ù‰ Ø§Ù„ØµÙˆØ±Ø© Ø¨Ø­Ø¬Ù… Ø¨Ø§Ø±Ø² Ø¬Ø¯Ø§Ù‹ØŒ Ù…Ø¹ Ø¥Ø¶Ø§ÙØ© ØªØ£Ø«ÙŠØ± Ø¯Ø®ÙˆÙ„ Ù„Ù„Ù†Øµ ÙŠØ¶ÙŠÙ Ù„Ù…Ø³Ø© Ø¬Ù…Ø§Ù„ÙŠØ© Ø¹Ù„Ù‰ Ù…Ø¹Ø±Ø¶ Ø§Ù„ØµÙˆØ±.",
-                                                                 "placeholder":  "ÙŠÙ…ÙƒÙ†Ùƒ Ø¥Ø¶Ø§ÙØ© Ø¹Ù†ÙˆØ§Ù† Ø¨Ø§Ø±Ø² Ù‡Ù†Ø§...",
+                                                                 "description":  "يتم عرضه على الصورة بحجم بارز جداً، مع إضافة تأثير دخول للنص يضيف لمسة جمالية على معرض الصور.",
+                                                                 "placeholder":  "يمكنك إضافة عنوان بارز هنا...",
                                                                  "hide":  false,
                                                                  "minLength":  0,
                                                                  "maxLength":  100
@@ -345,21 +348,21 @@
                                                              {
                                                                  "type":  "string",
                                                                  "icon":  "sicon-typography",
-                                                                 "label":  "Ù†Øµ Ø¥Ø¶Ø§ÙÙŠ",
+                                                                 "label":  "نص إضافي",
                                                                  "multilanguage":  true,
                                                                  "id":  "slides.description",
                                                                  "value":  null,
-                                                                 "description":  "ÙŠØªÙ… Ø¹Ø±Ø¶Ù‡ Ø¹Ù„Ù‰ Ø§Ù„ØµÙˆØ±Ø© Ø¨Ø­Ø¬Ù… Ø£ØµØºØ± Ù…Ù† Ø§Ù„Ø¹Ù†ÙˆØ§Ù† Ø§Ù„Ø±Ø¦ÙŠØ³ÙŠØŒ Ù…Ø¹ Ø¥Ø¶Ø§ÙØ© ØªØ£Ø«ÙŠØ± Ø¯Ø®ÙˆÙ„ Ù„Ù„Ù†Øµ ÙŠØ¶ÙŠÙ Ù„Ù…Ø³Ø© Ø¬Ù…Ø§Ù„ÙŠØ© Ø¹Ù„Ù‰ Ù…Ø¹Ø±Ø¶ Ø§Ù„ØµÙˆØ±.",
+                                                                 "description":  "يتم عرضه على الصورة بحجم أصغر من العنوان الرئيسي، مع إضافة تأثير دخول للنص يضيف لمسة جمالية على معرض الصور.",
                                                                  "format":  "textarea",
                                                                  "required":  false,
-                                                                 "placeholder":  "ÙŠÙ…ÙƒÙ†Ùƒ Ø¥Ø¶Ø§ÙØ© ØªÙØ§ØµÙŠÙ„ Ø¥Ø¶Ø§ÙÙŠØ© Ù‡Ù†Ø§",
+                                                                 "placeholder":  "يمكنك إضافة تفاصيل إضافية هنا",
                                                                  "minLength":  0,
                                                                  "maxLength":  255
                                                              },
                                                              {
                                                                  "type":  "boolean",
                                                                  "icon":  "sicon-toggle-off",
-                                                                 "label":  "Ø¥Ø²Ø§Ù„Ø© Ø·Ø¨Ù‚Ø© Ø§Ù„ØªØ¹ØªÙ…",
+                                                                 "label":  "إزالة طبقة التعتم",
                                                                  "description":  null,
                                                                  "id":  "slides.without_overlay",
                                                                  "format":  "switch",
@@ -375,7 +378,7 @@
                            "key":  "2b1b130b-5b37-422a-9683-e0fd367460c0",
                            "title":  {
                                          "en":  "Quick Links",
-                                         "ar":  "Ø±ÙˆØ§Ø¨Ø· Ø³Ø±ÙŠØ¹Ø©"
+                                         "ar":  "روابط سريعة"
                                      },
                            "icon":  "sicon-layout-grid-rearrange",
                            "path":  "home.main-links",
@@ -399,7 +402,7 @@
                                               "type":  "static",
                                               "format":  "description",
                                               "id":  "without-bg",
-                                              "value":  "\u003cdiv \u003e\u003ch6 \u003eÙ…Ø¹Ø§ÙŠÙ†Ø© Ø§Ù„Ø¹Ù†ØµØ±\u003c/h6\u003e\u003cimg class=\u0027w-full\u0027 src=\u0027https://cdn.salla.network/images/themes/raed/preview-images/main-links.png?v=1.1\u0027\u003e\u003c/div\u003e",
+                                              "value":  "\u003cdiv \u003e\u003ch6 \u003eمعاينة العنصر\u003c/h6\u003e\u003cimg class=\u0027w-full\u0027 src=\u0027https://cdn.salla.network/images/themes/raed/preview-images/main-links.png?v=1.1\u0027\u003e\u003c/div\u003e",
                                               "conditions":  [
                                                                  {
                                                                      "id":  "merge_with_top_component",
@@ -411,21 +414,21 @@
                                           {
                                               "type":  "string",
                                               "icon":  "sicon-format-text-alt",
-                                              "label":  "Ø§Ù„Ø¹Ù†ÙˆØ§Ù†",
+                                              "label":  "العنوان",
                                               "multilanguage":  true,
                                               "id":  "title",
                                               "value":  null,
                                               "required":  false,
                                               "format":  "text",
                                               "description":  null,
-                                              "placeholder":  "Ø£Ø¯Ø®Ù„ Ø§Ù„Ø¹Ù†ÙˆØ§Ù† Ù‡Ù†Ø§...",
+                                              "placeholder":  "أدخل العنوان هنا...",
                                               "minLength":  0,
                                               "maxLength":  100
                                           },
                                           {
                                               "type":  "boolean",
                                               "icon":  "sicon-toggle-off",
-                                              "label":  "Ø¯Ù…Ø¬ Ù…Ø¹ Ø§Ù„Ø¹Ù†ØµØ± Ø§Ù„Ø³Ø§Ø¨Ù‚",
+                                              "label":  "دمج مع العنصر السابق",
                                               "description":  null,
                                               "id":  "merge_with_top_component",
                                               "format":  "switch",
@@ -437,12 +440,12 @@
                                               "type":  "static",
                                               "format":  "description",
                                               "id":  "static-desc",
-                                              "value":  "\u003csmall \u003e* Ø¥Ø²Ø§Ø­Ø© ÙƒØ§Ù…Ù„ Ø§Ù„Ø¹Ù†ØµØ± ÙˆÙ…Ø­ØªÙˆÙŠØ§ØªÙ‡ Ù…Ø¹ Ø§Ù„Ø¹Ù†ØµØ± Ø§Ù„Ø³Ø§Ø¨Ù‚ØŒ ÙˆØ¬Ø¹Ù„Ù‡Ù…Ø§ ÙŠØ¸Ù‡Ø±Ø§Ù† ÙƒØ¹Ù†ØµØ± ÙˆØ§Ø­Ø¯ Ù…ØªÙ†Ø§Ø³Ù‚ØŒ ÙŠÙƒÙˆÙ† Ø°Ø§ ÙØ§Ø¦Ø¯Ø© ÙÙŠ Ø­Ø§Ù„Ø© ÙƒØ§Ù† Ø§Ù„Ø¹Ù†ØµØ± Ø§Ù„Ø³Ø§Ø¨Ù‚ Ù‡Ùˆ (ØµÙˆØ± Ù…ØªØ­Ø±ÙƒØ© Ù…Ø­Ø³Ù†Ø©). \u003c/small\u003e"
+                                              "value":  "\u003csmall \u003e* إزاحة كامل العنصر ومحتوياته مع العنصر السابق، وجعلهما يظهران كعنصر واحد متناسق، يكون ذا فائدة في حالة كان العنصر السابق هو (صور متحركة محسنة). \u003c/small\u003e"
                                           },
                                           {
                                               "type":  "boolean",
                                               "icon":  "sicon-toggle-off",
-                                              "label":  "Ø¹Ø±Ø¶ Ø£Ø³Ù‡Ù… Ø§Ù„ØªØ­Ø±Ùƒ",
+                                              "label":  "عرض أسهم التحرك",
                                               "description":  null,
                                               "id":  "show_controls",
                                               "format":  "switch",
@@ -453,8 +456,8 @@
                                           {
                                               "type":  "boolean",
                                               "icon":  "sicon-toggle-off",
-                                              "label":  "Ø¹Ø±Ø¶ Ø±ÙˆØ§Ø¨Ø· Ø§Ù„ØªØµÙ†ÙŠÙØ§Øª",
-                                              "description":  "ÙŠÙ…ÙƒÙ†Ùƒ ØªØ­Ø¯ÙŠØ¯ Ø§Ù„ØªØµÙ†ÙŠÙØ§Øª Ø¨Ø¯Ù„ Ø§Ù„Ø¹Ù†Ø§ØµØ± Ø§Ù„Ø®Ø§ØµØ©ØŒ Ù…Ø¹ Ø§Ù…ÙƒØ§Ù†ÙŠØ© Ø¹Ø±Ø¶ ØµÙˆØ±Ø© Ø§Ù„ØªØµÙ†ÙŠÙ Ù…Ø¹ Ø§Ù„Ø¹Ù†ØµØ±",
+                                              "label":  "عرض روابط التصنيفات",
+                                              "description":  "يمكنك تحديد التصنيفات بدل العناصر الخاصة، مع امكانية عرض صورة التصنيف مع العنصر",
                                               "id":  "show_cats",
                                               "format":  "switch",
                                               "required":  false,
@@ -465,7 +468,7 @@
                                               "id":  "categories",
                                               "type":  "items",
                                               "format":  "dropdown-list",
-                                              "label":  "Ø­Ø¯Ø¯ Ø§Ù„ØªØµÙ†ÙŠÙØ§Øª",
+                                              "label":  "حدد التصنيفات",
                                               "labelHTML":  null,
                                               "icon":  "sicon-keyboard_arrow_down",
                                               "selected":  [
@@ -493,41 +496,41 @@
                                               "required":  true,
                                               "minLength":  3,
                                               "maxLength":  100,
-                                              "item_label":  "Ø±Ø§Ø¨Ø·",
+                                              "item_label":  "رابط",
                                               "value":  [
                                                             {
                                                                 "links.icon":  "sicon-packed-box",
-                                                                "links.title":  "Ù…Ù†ØªØ¬ Ø¬Ø§Ù‡Ø²",
+                                                                "links.title":  "منتج جاهز",
                                                                 "links.url__type":  "offers_link"
                                                             },
                                                             {
                                                                 "links.icon":  "sicon-fabric-swatch",
-                                                                "links.title":  "Ø®Ø¯Ù…Ø© Ø­Ø³Ø¨ Ø§Ù„Ø·Ù„Ø¨",
+                                                                "links.title":  "خدمة حسب الطلب",
                                                                 "links.url__type":  "offers_link"
                                                             },
                                                             {
                                                                 "links.icon":  "sicon-cake",
-                                                                "links.title":  "Ø£ÙƒÙ„ ÙˆÙ…Ø´Ø±ÙˆØ¨Ø§Øª",
+                                                                "links.title":  "أكل ومشروبات",
                                                                 "links.url__type":  "offers_link"
                                                             },
                                                             {
                                                                 "links.icon":  "sicon-game-controller-alt",
-                                                                "links.title":  "Ù…Ù†ØªØ¬ Ø±Ù‚Ù…ÙŠ",
+                                                                "links.title":  "منتج رقمي",
                                                                 "links.url__type":  "offers_link"
                                                             },
                                                             {
                                                                 "links.icon":  "sicon-barcode-scan",
-                                                                "links.title":  "Ø¨Ø·Ø§Ù‚Ø© Ø±Ù‚Ù…ÙŠØ©",
+                                                                "links.title":  "بطاقة رقمية",
                                                                 "links.url__type":  "offers_link"
                                                             },
                                                             {
                                                                 "links.icon":  "sicon-inbox-full",
-                                                                "links.title":  "Ù…Ø¬Ù…ÙˆØ¹Ø© Ù…Ù†ØªØ¬Ø§Øª",
+                                                                "links.title":  "مجموعة منتجات",
                                                                 "links.url__type":  "offers_link"
                                                             },
                                                             {
                                                                 "links.icon":  "sicon-calendar-date",
-                                                                "links.title":  "Ø­Ø¬ÙˆØ²Ø§Øª",
+                                                                "links.title":  "حجوزات",
                                                                 "links.url__type":  "offers_link"
                                                             }
                                                         ],
@@ -535,7 +538,7 @@
                                                              {
                                                                  "type":  "string",
                                                                  "icon":  "sicon-format-text-alt",
-                                                                 "label":  "Ø¹Ù†ÙˆØ§Ù† Ø§Ù„Ø±Ø§Ø¨Ø·",
+                                                                 "label":  "عنوان الرابط",
                                                                  "id":  "links.icon",
                                                                  "value":  "sicon-store2",
                                                                  "required":  false,
@@ -552,14 +555,14 @@
                                                                  "required":  false,
                                                                  "format":  "text",
                                                                  "description":  null,
-                                                                 "placeholder":  "Ø£Ø¯Ø®Ù„ Ø¹Ù†ÙˆØ§Ù† Ù„Ù„Ø±Ø§Ø¨Ø· Ù‡Ù†Ø§...",
+                                                                 "placeholder":  "أدخل عنوان للرابط هنا...",
                                                                  "minLength":  2,
                                                                  "maxLength":  80
                                                              },
                                                              {
                                                                  "type":  "items",
                                                                  "icon":  "sicon-link",
-                                                                 "label":  "Ø§Ù„Ø±Ø§Ø¨Ø·",
+                                                                 "label":  "الرابط",
                                                                  "id":  "links.url",
                                                                  "value":  null,
                                                                  "description":  null,
@@ -569,57 +572,57 @@
                                                                  "source":  "custom",
                                                                  "sources":  [
                                                                                  {
-                                                                                     "label":  "Ù…Ù†ØªØ¬",
+                                                                                     "label":  "منتج",
                                                                                      "key":  "products",
                                                                                      "value":  "products"
                                                                                  },
                                                                                  {
-                                                                                     "label":  "Ù…Ù†ØªØ¬Ø§Øª Ù…Ø¹ ÙˆØ³Ù…",
+                                                                                     "label":  "منتجات مع وسم",
                                                                                      "key":  "products_tags",
                                                                                      "value":  "products_tags"
                                                                                  },
                                                                                  {
-                                                                                     "label":  "ØªØµÙ†ÙŠÙ",
+                                                                                     "label":  "تصنيف",
                                                                                      "key":  "categories",
                                                                                      "value":  "categories"
                                                                                  },
                                                                                  {
-                                                                                     "label":  "Ù…Ø§Ø±ÙƒØ© ØªØ¬Ø§Ø±ÙŠØ©",
+                                                                                     "label":  "ماركة تجارية",
                                                                                      "key":  "brands",
                                                                                      "value":  "brands"
                                                                                  },
                                                                                  {
-                                                                                     "label":  "ØµÙØ­Ø© ØªØ¹Ø±ÙŠÙÙŠØ©",
+                                                                                     "label":  "صفحة تعريفية",
                                                                                      "key":  "pages",
                                                                                      "value":  "pages"
                                                                                  },
                                                                                  {
-                                                                                     "label":  "Ù…Ù‚Ø§Ù„Ø©",
+                                                                                     "label":  "مقالة",
                                                                                      "key":  "blog_articles",
                                                                                      "value":  "blog_articles"
                                                                                  },
                                                                                  {
-                                                                                     "label":  "ØªØµÙ†ÙŠÙ Ø¶Ù…Ù† Ø§Ù„Ù…Ø¯ÙˆÙ†Ø©",
+                                                                                     "label":  "تصنيف ضمن المدونة",
                                                                                      "key":  "blog_categories",
                                                                                      "value":  "blog_categories"
                                                                                  },
                                                                                  {
-                                                                                     "label":  "Ø§Ù„ØªØ®ÙÙŠØ¶Ø§Øª",
+                                                                                     "label":  "التخفيضات",
                                                                                      "key":  "offers_link",
                                                                                      "value":  "offers_link"
                                                                                  },
                                                                                  {
-                                                                                     "label":  "Ø§Ù„Ù…Ø§Ø±ÙƒØ§Øª Ø§Ù„ØªØ¬Ø§Ø±ÙŠØ©",
+                                                                                     "label":  "الماركات التجارية",
                                                                                      "key":  "brands_link",
                                                                                      "value":  "brands_link"
                                                                                  },
                                                                                  {
-                                                                                     "label":  "Ø§Ù„Ù…Ø¯ÙˆÙ†Ø©",
+                                                                                     "label":  "المدونة",
                                                                                      "key":  "blog_link",
                                                                                      "value":  "blog_link"
                                                                                  },
                                                                                  {
-                                                                                     "label":  "Ø±Ø§Ø¨Ø· Ø®Ø§Ø±Ø¬ÙŠ",
+                                                                                     "label":  "رابط خارجي",
                                                                                      "key":  "custom",
                                                                                      "value":  "custom"
                                                                                  }
@@ -640,7 +643,7 @@
                            "key":  "9a758d20-2ce4-4782-91fe-c04466464588",
                            "title":  {
                                          "en":  "Animated products with a background",
-                                         "ar":  "Ù…Ù†ØªØ¬Ø§Øª Ù…ØªØ­Ø±ÙƒØ© Ù…Ø¹ Ø®Ù„ÙÙŠØ©"
+                                         "ar":  "منتجات متحركة مع خلفية"
                                      },
                            "icon":  "sicon-list-play",
                            "path":  "home.slider-products-with-header",
@@ -656,12 +659,12 @@
                                               "type":  "string",
                                               "icon":  "sicon-image",
                                               "value":  "https://cdn.salla.sa/form-builder/D7bG3pgSit43TheOejBOZV7LIfG1y1Cj0hWLmgIh.jpg",
-                                              "label":  "ØµÙˆØ±Ø© Ø§Ù„Ø®Ù„ÙÙŠØ©",
+                                              "label":  "صورة الخلفية",
                                               "id":  "background",
                                               "format":  "image",
                                               "required":  true,
                                               "placeholder":  null,
-                                              "description":  "* Ø§Ù„Ù…Ù‚Ø§Ø³ Ø§Ù„Ù…Ù†Ø§Ø³Ø¨ Ù„Ù„ØµÙˆØ±Ø© Ù‡Ùˆ 1233Ã—500 Ø¨ÙƒØ³Ù„",
+                                              "description":  "* المقاس المناسب للصورة هو 1233×500 بكسل",
                                               "settings":  {
                                                                "height":  580,
                                                                "width":  1400
@@ -670,14 +673,14 @@
                                           {
                                               "type":  "string",
                                               "icon":  "sicon-format-text-alt",
-                                              "label":  "Ø¹Ù†ÙˆØ§Ù† Ø±Ø¦ÙŠØ³ÙŠ",
+                                              "label":  "عنوان رئيسي",
                                               "multilanguage":  true,
                                               "id":  "title",
                                               "value":  null,
                                               "required":  false,
                                               "format":  "text",
                                               "description":  null,
-                                              "placeholder":  "ÙŠÙ…ÙƒÙ†Ùƒ Ø¥Ø¶Ø§ÙØ© Ø§Ù„Ø¹Ù†ÙˆØ§Ù† Ø§Ù„Ø±Ø¦ÙŠØ³ÙŠ Ù‡Ù†Ø§...",
+                                              "placeholder":  "يمكنك إضافة العنوان الرئيسي هنا...",
                                               "hide":  false,
                                               "minLength":  0,
                                               "maxLength":  "80"
@@ -685,21 +688,21 @@
                                           {
                                               "type":  "string",
                                               "icon":  "sicon-typography",
-                                              "label":  "Ù†Øµ ØªÙˆØ¶ÙŠØ­ÙŠ",
+                                              "label":  "نص توضيحي",
                                               "multilanguage":  true,
                                               "id":  "description",
                                               "value":  null,
                                               "description":  null,
                                               "format":  "textarea",
                                               "required":  false,
-                                              "placeholder":  "ÙŠÙ…ÙƒÙ†Ùƒ Ø¥Ø¶Ø§ÙØ© ÙˆØµÙ Ù„Ù‡Ø°Ø§ Ø§Ù„Ù‚Ø³Ù… Ù‡Ù†Ø§...",
+                                              "placeholder":  "يمكنك إضافة وصف لهذا القسم هنا...",
                                               "minLength":  0,
                                               "maxLength":  "256"
                                           },
                                           {
                                               "type":  "items",
                                               "icon":  "sicon-keyboard_arrow_down",
-                                              "label":  "Ù…Ù†ØªØ¬Ø§Øª",
+                                              "label":  "منتجات",
                                               "id":  "products",
                                               "format":  "dropdown-list",
                                               "description":  null,
@@ -722,69 +725,69 @@
                                           {
                                               "type":  "items",
                                               "icon":  "sicon-link",
-                                              "label":  "Ø±Ø§Ø¨Ø· Ø¹Ø±Ø¶ Ø§Ù„ÙƒÙ„",
+                                              "label":  "رابط عرض الكل",
                                               "id":  "display_all_url",
                                               "value":  [
 
                                                         ],
-                                              "description":  "Ø¹Ù†Ø¯ Ø¥Ø®ØªÙŠØ§Ø± Ø±Ø§Ø¨Ø· ÙØ§Ø±Øº Ø³ÙŠØªÙ… Ø¥Ø®ÙØ§Ø¡ Ø²Ø± \u0027Ø¹Ø±Ø¶ Ø§Ù„ÙƒÙ„\u0027",
+                                              "description":  "عند إختيار رابط فارغ سيتم إخفاء زر \u0027عرض الكل\u0027",
                                               "required":  false,
                                               "format":  "variable-list",
                                               "searchable":  true,
                                               "source":  "custom",
                                               "sources":  [
                                                               {
-                                                                  "label":  "Ù…Ù†ØªØ¬",
+                                                                  "label":  "منتج",
                                                                   "key":  "products",
                                                                   "value":  "products"
                                                               },
                                                               {
-                                                                  "label":  "Ù…Ù†ØªØ¬Ø§Øª Ù…Ø¹ ÙˆØ³Ù…",
+                                                                  "label":  "منتجات مع وسم",
                                                                   "key":  "products_tags",
                                                                   "value":  "products_tags"
                                                               },
                                                               {
-                                                                  "label":  "ØªØµÙ†ÙŠÙ",
+                                                                  "label":  "تصنيف",
                                                                   "key":  "categories",
                                                                   "value":  "categories"
                                                               },
                                                               {
-                                                                  "label":  "Ù…Ø§Ø±ÙƒØ© ØªØ¬Ø§Ø±ÙŠØ©",
+                                                                  "label":  "ماركة تجارية",
                                                                   "key":  "brands",
                                                                   "value":  "brands"
                                                               },
                                                               {
-                                                                  "label":  "ØµÙØ­Ø© ØªØ¹Ø±ÙŠÙÙŠØ©",
+                                                                  "label":  "صفحة تعريفية",
                                                                   "key":  "pages",
                                                                   "value":  "pages"
                                                               },
                                                               {
-                                                                  "label":  "Ù…Ù‚Ø§Ù„Ø©",
+                                                                  "label":  "مقالة",
                                                                   "key":  "blog_articles",
                                                                   "value":  "blog_articles"
                                                               },
                                                               {
-                                                                  "label":  "ØªØµÙ†ÙŠÙ Ø¶Ù…Ù† Ø§Ù„Ù…Ø¯ÙˆÙ†Ø©",
+                                                                  "label":  "تصنيف ضمن المدونة",
                                                                   "key":  "blog_categories",
                                                                   "value":  "blog_categories"
                                                               },
                                                               {
-                                                                  "label":  "Ø§Ù„ØªØ®ÙÙŠØ¶Ø§Øª",
+                                                                  "label":  "التخفيضات",
                                                                   "key":  "offers_link",
                                                                   "value":  "offers_link"
                                                               },
                                                               {
-                                                                  "label":  "Ø§Ù„Ù…Ø§Ø±ÙƒØ§Øª Ø§Ù„ØªØ¬Ø§Ø±ÙŠØ©",
+                                                                  "label":  "الماركات التجارية",
                                                                   "key":  "brands_link",
                                                                   "value":  "brands_link"
                                                               },
                                                               {
-                                                                  "label":  "Ø§Ù„Ù…Ø¯ÙˆÙ†Ø©",
+                                                                  "label":  "المدونة",
                                                                   "key":  "blog_link",
                                                                   "value":  "blog_link"
                                                               },
                                                               {
-                                                                  "label":  "Ø±Ø§Ø¨Ø· Ø®Ø§Ø±Ø¬ÙŠ",
+                                                                  "label":  "رابط خارجي",
                                                                   "key":  "custom",
                                                                   "value":  "custom"
                                                               }
@@ -796,7 +799,7 @@
                            "key":  "b89edc4a-ce0b-468f-8323-2da48147bb32",
                            "title":  {
                                          "en":  "Enhanced square images",
-                                         "ar":  "ØµÙˆØ± Ù…Ø±Ø¨Ø¹Ø© (Ù…Ø­Ø³Ù†Ø©)"
+                                         "ar":  "صور مربعة (محسنة)"
                                      },
                            "icon":  "sicon-image",
                            "path":  "home.enhanced-square-banners",
@@ -813,7 +816,7 @@
                                               "type":  "static",
                                               "format":  "description",
                                               "id":  "banners-note",
-                                              "value":  "\u003cdiv style=\u0027background-color:#f5f5f5;border-radius:8px;padding:12px 16px;margin-bottom:16px;color:#333;font-size:14px;line-height:1.6;direction:inherit;text-align:inherit;\u0027\u003e\u003cstrong style=\u0027color:#e53e3e;\u0027\u003eØªÙ†Ø¨ÙŠÙ‡:\u003c/strong\u003e ÙŠØªÙ… Ø§Ù‚ØªØµØ§Øµ Ø§Ù„ØµÙˆØ± Ù…Ù† Ø§Ù„Ø£Ø·Ø±Ø§Ù Ù„ØªÙ†Ø§Ø³Ø¨ Ù…Ù‚Ø§Ø³Ø§Øª Ø§Ù„Ø´Ø§Ø´Ø§ØªØŒ Ù„Ø°Ø§ ÙŠÙØ±Ø¬Ù‰ Ù…Ø±Ø§Ø¹Ø§Ø© Ø§Ù„Ø£Ø¬Ø²Ø§Ø¡ Ø§Ù„Ù…Ù‚ØªØµÙ‘Ø© Ø·ÙˆÙ„Ø§Ù‹ ÙˆØ¹Ø±Ø¶Ø§Ù‹ Ø¹Ù†Ø¯ Ø§Ù„ØªØµÙ…ÙŠÙ… Ù„ØªØ¸Ù‡Ø± Ø§Ù„ØµÙˆØ±Ø© ÙƒØ§Ù…Ù„Ø© Ù‚Ø¯Ø± Ø§Ù„Ø¥Ù…ÙƒØ§Ù†.\u003c/div\u003e"
+                                              "value":  "\u003cdiv style=\u0027background-color:#f5f5f5;border-radius:8px;padding:12px 16px;margin-bottom:16px;color:#333;font-size:14px;line-height:1.6;direction:inherit;text-align:inherit;\u0027\u003e\u003cstrong style=\u0027color:#e53e3e;\u0027\u003eتنبيه:\u003c/strong\u003e يتم اقتصاص الصور من الأطراف لتناسب مقاسات الشاشات، لذا يُرجى مراعاة الأجزاء المقتصّة طولاً وعرضاً عند التصميم لتظهر الصورة كاملة قدر الإمكان.\u003c/div\u003e"
                                           },
                                           {
                                               "id":  "banners",
@@ -822,38 +825,38 @@
                                               "required":  true,
                                               "minLength":  1,
                                               "maxLength":  5,
-                                              "label":  "Ù‚Ø§Ø¦Ù…Ø© Ø§Ù„ØµÙˆØ±",
-                                              "item_label":  "ØµÙˆØ±Ø©",
+                                              "label":  "قائمة الصور",
+                                              "item_label":  "صورة",
                                               "value":  [
                                                             {
                                                                 "banners.image":  "https://cdn.salla.sa/mQgZlG/pzOCEw10wCfXeVSpKnL0Ifd1O9ZkTfnZ17RkE14R.jpg",
                                                                 "banners.url":  null,
-                                                                "banners.title":  "ØªØµÙÙ‘ÙŽØ­ Ø­Ø³Ø¨ Ø§Ù„ØªØµÙ†ÙŠÙ",
-                                                                "banners.description":  "Ø³Ù‡ÙÙ‘Ù„ ØªØ¬Ø±Ø¨Ø© Ø§Ù„ØªØ³ÙˆÙ‘ÙÙ‚ ÙˆØ§Ù„ÙˆØµÙˆÙ„ Ù„Ù…Ù†ØªØ¬Ø§ØªÙƒ"
+                                                                "banners.title":  "تصفَّح حسب التصنيف",
+                                                                "banners.description":  "سهِّل تجربة التسوُّق والوصول لمنتجاتك"
                                                             },
                                                             {
                                                                 "banners.image":  "https://cdn.salla.sa/mQgZlG/lkyDjYwvWJNmAQoGnLALLcUkm66rCCDbTyVlSGdH.jpg",
                                                                 "banners.url":  null,
-                                                                "banners.title":  "ØªØµÙÙ‘ÙŽØ­ Ø­Ø³Ø¨ Ø§Ù„ØªØµÙ†ÙŠÙ",
-                                                                "banners.description":  "Ø³Ù‡ÙÙ‘Ù„ ØªØ¬Ø±Ø¨Ø© Ø§Ù„ØªØ³ÙˆÙ‘ÙÙ‚ ÙˆØ§Ù„ÙˆØµÙˆÙ„ Ù„Ù…Ù†ØªØ¬Ø§ØªÙƒ"
+                                                                "banners.title":  "تصفَّح حسب التصنيف",
+                                                                "banners.description":  "سهِّل تجربة التسوُّق والوصول لمنتجاتك"
                                                             },
                                                             {
                                                                 "banners.image":  "https://cdn.salla.sa/mQgZlG/lkyDjYwvWJNmAQoGnLALLcUkm66rCCDbTyVlSGdH.jpg",
                                                                 "banners.url":  null,
-                                                                "banners.title":  "ØªØµÙÙ‘ÙŽØ­ Ø­Ø³Ø¨ Ø§Ù„ØªØµÙ†ÙŠÙ",
-                                                                "banners.description":  "Ø³Ù‡ÙÙ‘Ù„ ØªØ¬Ø±Ø¨Ø© Ø§Ù„ØªØ³ÙˆÙ‘ÙÙ‚ ÙˆØ§Ù„ÙˆØµÙˆÙ„ Ù„Ù…Ù†ØªØ¬Ø§ØªÙƒ"
+                                                                "banners.title":  "تصفَّح حسب التصنيف",
+                                                                "banners.description":  "سهِّل تجربة التسوُّق والوصول لمنتجاتك"
                                                             },
                                                             {
                                                                 "banners.image":  "https://cdn.salla.sa/mQgZlG/lkyDjYwvWJNmAQoGnLALLcUkm66rCCDbTyVlSGdH.jpg",
                                                                 "banners.url":  null,
-                                                                "banners.title":  "ØªØµÙÙ‘ÙŽØ­ Ø­Ø³Ø¨ Ø§Ù„ØªØµÙ†ÙŠÙ",
-                                                                "banners.description":  "Ø³Ù‡ÙÙ‘Ù„ ØªØ¬Ø±Ø¨Ø© Ø§Ù„ØªØ³ÙˆÙ‘ÙÙ‚ ÙˆØ§Ù„ÙˆØµÙˆÙ„ Ù„Ù…Ù†ØªØ¬Ø§ØªÙƒ"
+                                                                "banners.title":  "تصفَّح حسب التصنيف",
+                                                                "banners.description":  "سهِّل تجربة التسوُّق والوصول لمنتجاتك"
                                                             },
                                                             {
                                                                 "banners.image":  "https://cdn.salla.sa/mQgZlG/lkyDjYwvWJNmAQoGnLALLcUkm66rCCDbTyVlSGdH.jpg",
                                                                 "banners.url":  null,
-                                                                "banners.title":  "ØªØµÙÙ‘ÙŽØ­ Ø­Ø³Ø¨ Ø§Ù„ØªØµÙ†ÙŠÙ",
-                                                                "banners.description":  "Ø³Ù‡ÙÙ‘Ù„ ØªØ¬Ø±Ø¨Ø© Ø§Ù„ØªØ³ÙˆÙ‘ÙÙ‚ ÙˆØ§Ù„ÙˆØµÙˆÙ„ Ù„Ù…Ù†ØªØ¬Ø§ØªÙƒ"
+                                                                "banners.title":  "تصفَّح حسب التصنيف",
+                                                                "banners.description":  "سهِّل تجربة التسوُّق والوصول لمنتجاتك"
                                                             }
                                                         ],
                                               "fields":  [
@@ -861,12 +864,12 @@
                                                                  "type":  "string",
                                                                  "icon":  "sicon-image",
                                                                  "value":  null,
-                                                                 "label":  "ØµÙˆØ±Ø© Ø§Ù„Ø¨Ù†Ø±",
+                                                                 "label":  "صورة البنر",
                                                                  "id":  "banners.image",
                                                                  "format":  "image",
                                                                  "required":  true,
                                                                  "placeholder":  null,
-                                                                 "description":  "* Ø§Ù„Ù…Ù‚Ø§Ø³ Ø§Ù„Ù…Ù†Ø§Ø³Ø¨ Ù„Ù„ØµÙˆØ±Ø© Ù‡Ùˆ 640Ã—427 Ø¨ÙƒØ³Ù„",
+                                                                 "description":  "* المقاس المناسب للصورة هو 640×427 بكسل",
                                                                  "settings":  {
                                                                                   "height":  427,
                                                                                   "width":  640
@@ -875,7 +878,7 @@
                                                              {
                                                                  "type":  "items",
                                                                  "icon":  "sicon-link",
-                                                                 "label":  "Ø§Ù„Ø±Ø§Ø¨Ø·",
+                                                                 "label":  "الرابط",
                                                                  "id":  "banners.url",
                                                                  "value":  null,
                                                                  "description":  null,
@@ -885,57 +888,57 @@
                                                                  "source":  "custom",
                                                                  "sources":  [
                                                                                  {
-                                                                                     "label":  "Ù…Ù†ØªØ¬",
+                                                                                     "label":  "منتج",
                                                                                      "key":  "products",
                                                                                      "value":  "products"
                                                                                  },
                                                                                  {
-                                                                                     "label":  "Ù…Ù†ØªØ¬Ø§Øª Ù…Ø¹ ÙˆØ³Ù…",
+                                                                                     "label":  "منتجات مع وسم",
                                                                                      "key":  "products_tags",
                                                                                      "value":  "products_tags"
                                                                                  },
                                                                                  {
-                                                                                     "label":  "ØªØµÙ†ÙŠÙ",
+                                                                                     "label":  "تصنيف",
                                                                                      "key":  "categories",
                                                                                      "value":  "categories"
                                                                                  },
                                                                                  {
-                                                                                     "label":  "Ù…Ø§Ø±ÙƒØ© ØªØ¬Ø§Ø±ÙŠØ©",
+                                                                                     "label":  "ماركة تجارية",
                                                                                      "key":  "brands",
                                                                                      "value":  "brands"
                                                                                  },
                                                                                  {
-                                                                                     "label":  "ØµÙØ­Ø© ØªØ¹Ø±ÙŠÙÙŠØ©",
+                                                                                     "label":  "صفحة تعريفية",
                                                                                      "key":  "pages",
                                                                                      "value":  "pages"
                                                                                  },
                                                                                  {
-                                                                                     "label":  "Ù…Ù‚Ø§Ù„Ø©",
+                                                                                     "label":  "مقالة",
                                                                                      "key":  "blog_articles",
                                                                                      "value":  "blog_articles"
                                                                                  },
                                                                                  {
-                                                                                     "label":  "ØªØµÙ†ÙŠÙ Ø¶Ù…Ù† Ø§Ù„Ù…Ø¯ÙˆÙ†Ø©",
+                                                                                     "label":  "تصنيف ضمن المدونة",
                                                                                      "key":  "blog_categories",
                                                                                      "value":  "blog_categories"
                                                                                  },
                                                                                  {
-                                                                                     "label":  "Ø§Ù„ØªØ®ÙÙŠØ¶Ø§Øª",
+                                                                                     "label":  "التخفيضات",
                                                                                      "key":  "offers_link",
                                                                                      "value":  "offers_link"
                                                                                  },
                                                                                  {
-                                                                                     "label":  "Ø§Ù„Ù…Ø§Ø±ÙƒØ§Øª Ø§Ù„ØªØ¬Ø§Ø±ÙŠØ©",
+                                                                                     "label":  "الماركات التجارية",
                                                                                      "key":  "brands_link",
                                                                                      "value":  "brands_link"
                                                                                  },
                                                                                  {
-                                                                                     "label":  "Ø§Ù„Ù…Ø¯ÙˆÙ†Ø©",
+                                                                                     "label":  "المدونة",
                                                                                      "key":  "blog_link",
                                                                                      "value":  "blog_link"
                                                                                  },
                                                                                  {
-                                                                                     "label":  "Ø±Ø§Ø¨Ø· Ø®Ø§Ø±Ø¬ÙŠ",
+                                                                                     "label":  "رابط خارجي",
                                                                                      "key":  "custom",
                                                                                      "value":  "custom"
                                                                                  }
@@ -944,14 +947,14 @@
                                                              {
                                                                  "type":  "string",
                                                                  "icon":  "sicon-format-text-alt",
-                                                                 "label":  "Ø¹Ù†ÙˆØ§Ù† Ø±Ø¦ÙŠØ³ÙŠ",
+                                                                 "label":  "عنوان رئيسي",
                                                                  "multilanguage":  true,
                                                                  "id":  "banners.title",
                                                                  "value":  null,
                                                                  "required":  false,
                                                                  "format":  "text",
-                                                                 "description":  "Ù†Øµ ÙŠØªÙ… Ø¥Ø¶Ø§ÙØªÙ‡ Ø¹Ù„Ù‰ Ø§Ù„ØµÙˆØ±Ø© Ø¨Ù†Ù…Ø· Ø®Ø· ÙƒØ¨ÙŠØ±",
-                                                                 "placeholder":  "Ø£Ø¯Ø®Ù„ Ø§Ù„Ù†Øµ Ù‡Ù†Ø§...",
+                                                                 "description":  "نص يتم إضافته على الصورة بنمط خط كبير",
+                                                                 "placeholder":  "أدخل النص هنا...",
                                                                  "hide":  false,
                                                                  "minLength":  0,
                                                                  "maxLength":  100
@@ -959,11 +962,11 @@
                                                              {
                                                                  "type":  "string",
                                                                  "icon":  "sicon-typography",
-                                                                 "label":  "Ù†Øµ ØªÙˆØ¶ÙŠØ­ÙŠ",
+                                                                 "label":  "نص توضيحي",
                                                                  "multilanguage":  true,
                                                                  "id":  "banners.description",
                                                                  "value":  null,
-                                                                 "description":  "Ù†Øµ ÙŠØªÙ… Ø¥Ø¶Ø§ÙØªÙ‡ Ø¹Ù„Ù‰ Ø§Ù„ØµÙˆØ±Ø© Ø¨Ø®Ø· Ø£ØµØºØ± Ù…Ù† Ø§Ù„Ø¹Ù†ÙˆØ§Ù† Ø§Ù„Ø±Ø¦ÙŠØ³ÙŠ",
+                                                                 "description":  "نص يتم إضافته على الصورة بخط أصغر من العنوان الرئيسي",
                                                                  "format":  "textarea",
                                                                  "required":  false,
                                                                  "placeholder":  "Your text here",
@@ -978,7 +981,7 @@
                            "key":  "25f6cf26-a53f-4954-9b32-739b311b32c7",
                            "title":  {
                                          "en":  "Brands",
-                                         "ar":  "Ø§Ù„Ù…Ø§Ø±ÙƒØ§Øª Ø§Ù„ØªØ¬Ø§Ø±ÙŠØ©"
+                                         "ar":  "الماركات التجارية"
                                      },
                            "icon":  "sicon-award-ribbon",
                            "path":  "home.brands",
@@ -993,21 +996,21 @@
                                           {
                                               "type":  "string",
                                               "icon":  "sicon-format-text-alt",
-                                              "label":  "Ø§Ù„Ø¹Ù†ÙˆØ§Ù†",
+                                              "label":  "العنوان",
                                               "multilanguage":  true,
                                               "id":  "title",
                                               "required":  false,
                                               "format":  "text",
                                               "description":  null,
-                                              "placeholder":  "Ø£Ø¯Ø®Ù„ Ø§Ù„Ø¹Ù†ÙˆØ§Ù† Ù‡Ù†Ø§...",
+                                              "placeholder":  "أدخل العنوان هنا...",
                                               "minLength":  0,
                                               "maxLength":  200,
-                                              "value":  "ØªØµÙØ­ Ù…Ù† Ø®Ù„Ø§Ù„ Ø§Ù„Ø¹Ù„Ø§Ù…Ø§Øª Ø§Ù„ØªØ¬Ø§Ø±ÙŠØ©"
+                                              "value":  "تصفح من خلال العلامات التجارية"
                                           },
                                           {
                                               "type":  "items",
                                               "icon":  "sicon-keyboard_arrow_down",
-                                              "label":  "Ø§Ù„Ù…Ø§Ø±ÙƒØ§Øª Ø§Ù„ØªØ¬Ø§Ø±ÙŠØ©",
+                                              "label":  "الماركات التجارية",
                                               "id":  "brands",
                                               "format":  "dropdown-list",
                                               "description":  null,
@@ -1028,7 +1031,7 @@
                            "key":  "541cc423-90c7-4230-8a33-a0342cfde4ad",
                            "title":  {
                                          "en":  "Custom testimonials",
-                                         "ar":  "Ø¢Ø±Ø§Ø¡ Ø¹Ù…Ù„Ø§Ø¡ Ù…Ø®ØµØµØ©"
+                                         "ar":  "آراء عملاء مخصصة"
                                      },
                            "icon":  "sicon-chat-bubbles",
                            "path":  "home.custom-testimonials",
@@ -1046,35 +1049,35 @@
                                               "key":  "0473eb46-c7f5-44c5-bd6f-b1fe716a5e64",
                                               "type":  "collection",
                                               "format":  "collection",
-                                              "label":  "Ø§Ù„ØªÙ‚ÙŠÙŠÙ…Ø§Øª",
+                                              "label":  "التقييمات",
                                               "description":  null,
                                               "labelHTML":  null,
-                                              "item_label":  "Ø§Ù„ØªÙ‚ÙŠÙŠÙ…",
+                                              "item_label":  "التقييم",
                                               "icon":  "sicon-list-add",
                                               "value":  [
                                                             {
-                                                                "items.name":  "Ù†Ø¯Ù‰ Ø§Ù„Ø­Ø³ÙŠÙ†ÙŠ",
+                                                                "items.name":  "ندى الحسيني",
                                                                 "items.avatar":  "https://cdn.assets.salla.network/prod/stores/themes/default/assets/images/avatar_female.png",
                                                                 "items.stars":  5,
-                                                                "items.text":  "ÙˆØµÙ„ØªÙ†ÙŠ Ø§Ù„ÙŠÙˆÙ…  ÙˆØ·Ù„Ø¹Øª Ø¬Ù…ÙŠÙ„Ø© Ù…ØªØ­Ù…Ø³Ø© Ø£Ø¬Ø±Ø¨Ù‡Ø§ â¤ï¸"
+                                                                "items.text":  "وصلتني اليوم  وطلعت جميلة متحمسة أجربها ❤️"
                                                             },
                                                             {
-                                                                "items.name":  "Ø®Ø§Ù„Ø¯ Ø§Ù„Ø£Ø­Ù…Ø¯",
+                                                                "items.name":  "خالد الأحمد",
                                                                 "items.avatar":  "https://cdn.assets.salla.network/prod/stores/themes/default/assets/images/avatar_male.png",
                                                                 "items.stars":  5,
-                                                                "items.text":  "Ø§Ø´ØªØ±ÙŠØª Ù…Ù† Ù‡Ù†Ø§ Ù„Ø¹ÙŠØ§Ù„ÙŠ ÙˆØµØ±Ø§Ø­Ø© Ø´Ø¦ Ù„Ø§ ÙŠØ¹Ù„Ù‰ Ø¹Ù„ÙŠÙ‡ ðŸ‘"
+                                                                "items.text":  "اشتريت من هنا لعيالي وصراحة شئ لا يعلى عليه 👏"
                                                             },
                                                             {
-                                                                "items.name":  "Ø®Ø§Ù„Ø¯ Ø§Ù„Ù…Ø³Ø¹ÙˆØ¯ÙŠ",
+                                                                "items.name":  "خالد المسعودي",
                                                                 "items.avatar":  "https://cdn.assets.salla.network/prod/stores/themes/default/assets/images/avatar_male.png",
                                                                 "items.stars":  5,
-                                                                "items.text":  "Ø±Ù‡ÙŠØ¨ÙŠÙ† ÙŠÙÙƒÙˆÙ† Ø£Ø²Ù…Ø©. ðŸ‘Œ"
+                                                                "items.text":  "رهيبين يفكون أزمة. 👌"
                                                             },
                                                             {
-                                                                "items.name":  "Ø¹Ø¨Ø¯Ø§Ù„Ø¹Ø²ÙŠØ² Ø§Ù„ÙŠØ§Ù…ÙŠ",
+                                                                "items.name":  "عبدالعزيز اليامي",
                                                                 "items.avatar":  "https://cdn.assets.salla.network/prod/stores/themes/default/assets/images/avatar_male.png",
                                                                 "items.stars":  5,
-                                                                "items.text":  "Ø£Ø­Ø¨ Ù‡Ø°Ø§ Ø§Ù„Ù…ØªØ¬Ø± ÙˆØªØ¹Ø§Ù…Ù„Ù‡Ù… Ø§Ù„Ø±Ø§Ù‚ÙŠ Ù…Ø¹ Ø§Ù„Ø¹Ù…Ù„Ø§Ø¡ â¤ï¸"
+                                                                "items.text":  "أحب هذا المتجر وتعاملهم الراقي مع العملاء ❤️"
                                                             }
                                                         ],
                                               "fields":  [
@@ -1083,10 +1086,10 @@
                                                                  "key":  "04e34d04-d1c3-4b75-b1d6-4e5b4ed22623",
                                                                  "type":  "string",
                                                                  "format":  "text",
-                                                                 "label":  "Ø§Ø³Ù… Ø§Ù„Ø¹Ù…ÙŠÙ„",
+                                                                 "label":  "اسم العميل",
                                                                  "description":  null,
                                                                  "labelHTML":  null,
-                                                                 "placeholder":  "Ø§Ø³Ù… Ø§Ù„Ø¹Ù…ÙŠÙ„",
+                                                                 "placeholder":  "اسم العميل",
                                                                  "icon":  "sicon-format-text-alt",
                                                                  "value":  null,
                                                                  "multilanguage":  false,
@@ -1097,8 +1100,8 @@
                                                                  "key":  "9ae4a6cc-7d20-4ae9-8bc0-33b2452502ca",
                                                                  "type":  "string",
                                                                  "format":  "image",
-                                                                 "label":  "ØµÙˆØ±Ø© Ø§Ù„Ø¹Ù…ÙŠÙ„",
-                                                                 "description":  "Ø§Ù„Ù…Ù‚Ø§Ø³ Ø§Ù„Ù…Ù†Ø§Ø³Ø¨ Ù„Ù„ØµÙˆØ±Ø© Ù‡Ùˆ 68*68 Ø¨ÙƒØ³Ù„",
+                                                                 "label":  "صورة العميل",
+                                                                 "description":  "المقاس المناسب للصورة هو 68*68 بكسل",
                                                                  "labelHTML":  null,
                                                                  "placeholder":  "e.g. https://hostname.com/image.png",
                                                                  "icon":  "sicon-image",
@@ -1109,11 +1112,11 @@
                                                                  "id":  "items.stars",
                                                                  "type":  "number",
                                                                  "format":  "integer",
-                                                                 "label":  "Ø¹Ø¯Ø¯ Ø§Ù„Ù†Ø¬ÙˆÙ…",
+                                                                 "label":  "عدد النجوم",
                                                                  "description":  null,
                                                                  "key":  "f0caf793-88f8-4178-b1cc-a7ace5c09ff6",
-                                                                 "labelHTML":  "Ù…Ù† 1 Ø¥Ù„Ù‰ 5",
-                                                                 "placeholder":  "Ø§Ù„Ù‚ÙŠÙ…Ø©",
+                                                                 "labelHTML":  "من 1 إلى 5",
+                                                                 "placeholder":  "القيمة",
                                                                  "icon":  "sicon-pencil-ruler",
                                                                  "value":  5,
                                                                  "required":  false,
@@ -1125,10 +1128,10 @@
                                                                  "key":  "0d474cc4-39f6-4495-8e24-a8eb10d4bbab",
                                                                  "type":  "string",
                                                                  "format":  "textarea",
-                                                                 "label":  "Ù†Øµ Ø§Ù„ØªÙ‚ÙŠÙŠÙ…",
+                                                                 "label":  "نص التقييم",
                                                                  "description":  null,
                                                                  "labelHTML":  null,
-                                                                 "placeholder":  "Ù†Øµ Ø§Ù„ØªÙ‚ÙŠÙŠÙ…",
+                                                                 "placeholder":  "نص التقييم",
                                                                  "icon":  "sicon-format-text-alt",
                                                                  "value":  null,
                                                                  "multilanguage":  true,
@@ -1143,5 +1146,8 @@
                        }
                    ],
     "support_url":  "https://salla.com/",
-    "description":  "ثيم تقني داكن لمتجر Apex PC"
+    "description":  {
+                        "ar":  "مجموعة كبيرة من المزايا لدعم تجارتك وتقديم تجربة تسوق مثيرة لعملائك",
+                        "en":  "A wide range of features to support your business and provide an exciting shopping experience for your customers"
+                    }
 }
