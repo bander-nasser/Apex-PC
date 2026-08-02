@@ -1,0 +1,318 @@
+/* ==========================================================
+   APEX PC — Dark Purple Identity
+   Standalone customization layer for Salla Twilight
+   ========================================================== */
+
+:root {
+  --color-primary: #7c2ae8;
+  --color-primary-light: #a855f7;
+  --color-primary-dark: #5b21b6;
+  --apex-bg: #08080b;
+  --apex-surface: #111114;
+  --apex-card: #15151a;
+  --apex-card-hover: #1b1b22;
+  --apex-border: #29252f;
+  --apex-text: #ffffff;
+  --apex-muted: #b8b5c0;
+  --apex-muted-2: #8d8995;
+  --apex-glow: 0 0 28px rgba(124, 42, 232, 0.32);
+  --apex-radius-sm: 10px;
+  --apex-radius-md: 16px;
+  --apex-radius-lg: 24px;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: var(--apex-bg);
+}
+
+body {
+  color: var(--apex-text);
+  background:
+    radial-gradient(circle at 80% -10%, rgba(124, 42, 232, 0.16), transparent 34rem),
+    radial-gradient(circle at 8% 22%, rgba(168, 85, 247, 0.08), transparent 30rem),
+    var(--apex-bg);
+}
+
+::selection {
+  color: #fff;
+  background: rgba(124, 42, 232, 0.75);
+}
+
+a {
+  transition: color 180ms ease, opacity 180ms ease;
+}
+
+.store-header,
+.top-navbar,
+.main-nav-container,
+.navbar,
+.store-footer {
+  color: var(--apex-text);
+  background: rgba(8, 8, 11, 0.92);
+  border-color: var(--apex-border);
+  backdrop-filter: blur(16px);
+}
+
+.store-header {
+  position: relative;
+  z-index: 50;
+  border-bottom: 1px solid rgba(124, 42, 232, 0.22);
+  box-shadow: 0 12px 45px rgba(0, 0, 0, 0.28);
+}
+
+.navbar-brand img,
+.navbar-brand picture {
+  max-height: 66px;
+  object-fit: contain;
+}
+
+.main-menu a,
+.top-navbar a {
+  color: var(--apex-muted);
+}
+
+.main-menu a:hover,
+.top-navbar a:hover,
+.main-menu li:hover > a {
+  color: var(--apex-text);
+}
+
+.s-search-input,
+input,
+textarea,
+select {
+  color: var(--apex-text);
+  background: var(--apex-surface);
+  border-color: var(--apex-border);
+  border-radius: var(--apex-radius-sm);
+}
+
+.s-search-input:focus,
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(124, 42, 232, 0.16);
+}
+
+button,
+.btn,
+.s-button-btn {
+  border-radius: var(--apex-radius-sm);
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    border-color 180ms ease,
+    background 180ms ease;
+}
+
+button:hover,
+.btn:hover,
+.s-button-btn:hover {
+  transform: translateY(-1px);
+}
+
+.s-button-primary,
+.btn--primary,
+button[type="submit"] {
+  color: #fff;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+  border-color: transparent;
+  box-shadow: 0 10px 24px rgba(124, 42, 232, 0.24);
+}
+
+.s-button-primary:hover,
+.btn--primary:hover,
+button[type="submit"]:hover {
+  box-shadow: var(--apex-glow);
+}
+
+.product-entry,
+.s-product-card-entry,
+.s-product-card-vertical,
+.card,
+.testimonial,
+.feature-item,
+.s-block {
+  color: var(--apex-text);
+  background: linear-gradient(180deg, rgba(27, 27, 34, 0.95), rgba(17, 17, 20, 0.96));
+  border: 1px solid var(--apex-border);
+  border-radius: var(--apex-radius-md);
+}
+
+.product-entry:hover,
+.s-product-card-entry:hover,
+.s-product-card-vertical:hover,
+.card:hover {
+  border-color: rgba(124, 42, 232, 0.55);
+  box-shadow: var(--apex-glow);
+  transform: translateY(-3px);
+}
+
+.product-entry,
+.s-product-card-entry,
+.s-product-card-vertical {
+  overflow: hidden;
+  transition:
+    transform 220ms ease,
+    box-shadow 220ms ease,
+    border-color 220ms ease;
+}
+
+.product-entry img,
+.s-product-card-entry img {
+  transition: transform 320ms ease;
+}
+
+.product-entry:hover img,
+.s-product-card-entry:hover img {
+  transform: scale(1.025);
+}
+
+.s-product-card-content-title,
+.product-entry__title,
+h1, h2, h3, h4, h5, h6 {
+  color: var(--apex-text);
+}
+
+.text-gray-400,
+.text-gray-500,
+.text-gray-600,
+.product-entry__excerpt,
+.s-product-card-content-sub {
+  color: var(--apex-muted) !important;
+}
+
+.s-slider-block__title,
+.section-title {
+  position: relative;
+  padding-inline-start: 14px;
+}
+
+.s-slider-block__title::before,
+.section-title::before {
+  position: absolute;
+  inset-inline-start: 0;
+  top: 50%;
+  width: 4px;
+  height: 70%;
+  content: "";
+  background: linear-gradient(180deg, var(--color-primary-light), var(--color-primary));
+  border-radius: 999px;
+  transform: translateY(-50%);
+  box-shadow: 0 0 14px rgba(124, 42, 232, 0.6);
+}
+
+.s-slider-container,
+.s-slider-block,
+.s-block {
+  --swiper-theme-color: var(--color-primary);
+}
+
+salla-slider .swiper-button-next,
+salla-slider .swiper-button-prev {
+  color: #fff;
+  background: rgba(21, 21, 26, 0.88);
+  border: 1px solid var(--apex-border);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.28);
+}
+
+salla-slider .swiper-button-next:hover,
+salla-slider .swiper-button-prev:hover {
+  border-color: var(--color-primary);
+  box-shadow: var(--apex-glow);
+}
+
+.s-breadcrumb-wrapper,
+.breadcrumb {
+  color: var(--apex-muted);
+  background: transparent;
+}
+
+.s-product-options-option,
+.product-option,
+.product-form,
+.s-cart-summary-wrapper,
+.cart-item {
+  color: var(--apex-text);
+  background: var(--apex-surface);
+  border-color: var(--apex-border);
+  border-radius: var(--apex-radius-md);
+}
+
+.s-product-options-option:hover,
+.product-option:hover {
+  border-color: rgba(124, 42, 232, 0.55);
+}
+
+.s-product-options-option.selected,
+.product-option.selected,
+input:checked + label {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 2px rgba(124, 42, 232, 0.16);
+}
+
+.store-footer {
+  margin-top: 4rem;
+  border-top: 1px solid rgba(124, 42, 232, 0.28);
+  background:
+    radial-gradient(circle at 50% 0%, rgba(124, 42, 232, 0.12), transparent 28rem),
+    #08080b;
+}
+
+.store-footer a {
+  color: var(--apex-muted);
+}
+
+.store-footer a:hover {
+  color: var(--color-primary-light);
+}
+
+.s-alert,
+.alert {
+  border-radius: var(--apex-radius-sm);
+}
+
+.s-modal-wrapper,
+.s-modal-body,
+.modal-content {
+  color: var(--apex-text);
+  background: var(--apex-card);
+  border-color: var(--apex-border);
+}
+
+@media (max-width: 767px) {
+  :root {
+    --apex-radius-md: 14px;
+    --apex-radius-lg: 18px;
+  }
+
+  body {
+    background:
+      radial-gradient(circle at 50% -8%, rgba(124, 42, 232, 0.16), transparent 25rem),
+      var(--apex-bg);
+  }
+
+  .store-header {
+    backdrop-filter: blur(12px);
+  }
+
+  .product-entry:hover,
+  .s-product-card-entry:hover,
+  .s-product-card-vertical:hover,
+  .card:hover {
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
