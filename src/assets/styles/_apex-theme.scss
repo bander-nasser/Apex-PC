@@ -1056,8 +1056,8 @@ input:checked + label {
 .apex-home-hero__visual img {
   position: relative;
   z-index: 2;
-  width: min(440px, 90%);
-  max-height: 410px;
+  width: min(560px, 100%);
+  max-height: 500px;
   object-fit: contain;
   filter: drop-shadow(0 28px 45px rgba(0, 0, 0, 0.45));
 }
@@ -1429,8 +1429,8 @@ input:checked + label {
   }
 
   .apex-home-hero__visual img {
-    width: 230px;
-  }
+  width: 290px;
+}
 
   .apex-home-section {
     padding: 38px 0;
