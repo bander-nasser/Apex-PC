@@ -600,4 +600,33 @@ input:checked + label {
     height: 62px;
   }
 }
+}/* Apex PC logo sizing */
+
+.navbar-brand {
+  min-width: 190px;
+  height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-brand img {
+  display: block !important;
+  width: 185px !important;
+  height: 82px !important;
+  max-width: none !important;
+  max-height: none !important;
+  object-fit: contain;
+}
+
+@media (max-width: 767px) {
+  .navbar-brand {
+    min-width: 125px;
+    height: 66px;
+  }
+
+  .navbar-brand img {
+    width: 120px !important;
+    height: 58px !important;
+  }
 }
