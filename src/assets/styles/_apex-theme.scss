@@ -569,4 +569,27 @@ input:checked + label {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
   }
+}/* Apex PC forced logo */
+
+.navbar-brand {
+  width: 210px;
+  height: 86px;
+  flex-shrink: 0;
+  background-image: url("/images/apex-logo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.navbar-brand img,
+.navbar-brand picture,
+.navbar-brand svg {
+  display: none !important;
+}
+
+@media (max-width: 767px) {
+  .navbar-brand {
+    width: 135px;
+    height: 62px;
+  }
 }
