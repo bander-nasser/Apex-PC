@@ -911,4 +911,566 @@ input:checked + label {
     margin-top: 22px;
     font-size: 12px;
   }
+}/* =========================================================
+   Apex PC Complete Homepage
+   ========================================================= */
+
+.apex-home {
+  background:
+    radial-gradient(circle at 80% 5%, rgba(124, 42, 232, 0.12), transparent 28%),
+    linear-gradient(180deg, #101017 0%, #171720 38%, #f3f3f6 38%, #f3f3f6 100%);
+  overflow: hidden;
+}
+
+.apex-home-hero {
+  padding: 28px 0 42px;
+}
+
+.apex-home-hero__box {
+  position: relative;
+  min-height: 530px;
+  padding: 70px;
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 30px;
+  color: #ffffff;
+  background:
+    radial-gradient(circle at 75% 40%, rgba(124, 42, 232, 0.34), transparent 34%),
+    linear-gradient(135deg, #11111a 0%, #171321 55%, #21113c 100%);
+  border: 1px solid rgba(160, 100, 255, 0.34);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.32);
+}
+
+.apex-home-hero__box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.22;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+  background-size: 36px 36px;
+}
+
+.apex-home-hero__content,
+.apex-home-hero__visual {
+  position: relative;
+  z-index: 2;
+}
+
+.apex-home-hero__badge,
+.apex-countdown-card__label {
+  display: inline-flex;
+  padding: 8px 14px;
+  border-radius: 999px;
+  color: #d4b7ff;
+  background: rgba(124, 42, 232, 0.17);
+  border: 1px solid rgba(167, 104, 255, 0.25);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.apex-home-hero h1 {
+  max-width: 650px;
+  margin: 22px 0 18px;
+  font-size: clamp(42px, 5vw, 72px);
+  line-height: 1.15;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+}
+
+.apex-home-hero h1 strong {
+  display: block;
+  color: #aa64ff;
+}
+
+.apex-home-hero__content > p {
+  max-width: 580px;
+  color: rgba(255, 255, 255, 0.76);
+  font-size: 18px;
+  line-height: 1.9;
+}
+
+.apex-home-hero__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px;
+  margin-top: 30px;
+}
+
+.apex-home-btn {
+  min-height: 50px;
+  padding: 0 28px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 14px;
+  font-size: 15px;
+  font-weight: 800;
+  text-decoration: none !important;
+  transition: 0.25s ease;
+}
+
+.apex-home-btn:hover {
+  transform: translateY(-3px);
+}
+
+.apex-home-btn--primary {
+  color: #ffffff !important;
+  background: linear-gradient(135deg, #9747ff, #6e20db);
+  border: 1px solid #a65cff;
+  box-shadow: 0 15px 34px rgba(124, 42, 232, 0.32);
+}
+
+.apex-home-btn--outline {
+  color: #ffffff !important;
+  background: rgba(255, 255, 255, 0.055);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+}
+
+.apex-home-hero__features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+  margin-top: 30px;
+  color: rgba(255, 255, 255, 0.68);
+  font-size: 13px;
+}
+
+.apex-home-hero__features span::before {
+  content: "✓";
+  margin-inline-end: 7px;
+  color: #b06cff;
+  font-weight: 900;
+}
+
+.apex-home-hero__visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.apex-home-hero__visual img {
+  position: relative;
+  z-index: 2;
+  width: min(440px, 90%);
+  max-height: 410px;
+  object-fit: contain;
+  filter: drop-shadow(0 28px 45px rgba(0, 0, 0, 0.45));
+}
+
+.apex-home-hero__glow {
+  position: absolute;
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
+  background: rgba(119, 39, 229, 0.34);
+  filter: blur(75px);
+}
+
+.apex-home-section {
+  padding: 55px 0;
+}
+
+.apex-home-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 28px;
+}
+
+.apex-home-heading span {
+  display: block;
+  margin-bottom: 5px;
+  color: #8a35e8;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.apex-home-heading h2 {
+  margin: 0;
+  color: #181821;
+  font-size: clamp(26px, 3vw, 38px);
+  font-weight: 800;
+}
+
+.apex-category-grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.apex-category-card {
+  min-height: 220px;
+  padding: 25px 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 20px;
+  color: #22222c !important;
+  text-decoration: none !important;
+  background: #ffffff;
+  border: 1px solid #e1e1e8;
+  box-shadow: 0 12px 32px rgba(30, 30, 50, 0.075);
+  transition: 0.25s ease;
+}
+
+.apex-category-card:hover {
+  transform: translateY(-7px);
+  border-color: rgba(124, 42, 232, 0.5);
+  box-shadow: 0 20px 44px rgba(124, 42, 232, 0.14);
+}
+
+.apex-category-card__icon {
+  width: 56px;
+  height: 56px;
+  margin-bottom: 24px;
+  display: grid;
+  place-items: center;
+  border-radius: 16px;
+  font-size: 28px;
+  background: #f0e8ff;
+}
+
+.apex-category-card h3 {
+  margin: 0 0 8px;
+  color: #6020bb;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.apex-category-card p {
+  margin: 0;
+  color: #72727d;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.apex-weekly-section {
+  background: #e9e9ef;
+}
+
+.apex-weekly-grid {
+  display: grid;
+  grid-template-columns: 0.72fr 1.6fr;
+  gap: 20px;
+}
+
+.apex-countdown-card,
+.apex-featured-offer {
+  border-radius: 26px;
+  overflow: hidden;
+}
+
+.apex-countdown-card {
+  padding: 38px;
+  color: #ffffff;
+  background:
+    radial-gradient(circle at 95% 100%, rgba(157, 70, 255, 0.46), transparent 35%),
+    linear-gradient(145deg, #14131e, #271044);
+}
+
+.apex-countdown-card h2 {
+  margin: 20px 0 8px;
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.apex-countdown-card > p {
+  color: rgba(255, 255, 255, 0.68);
+}
+
+.apex-countdown {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 9px;
+  margin: 28px 0;
+}
+
+.apex-countdown div {
+  min-height: 88px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.075);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.apex-countdown strong {
+  font-size: 25px;
+}
+
+.apex-countdown span {
+  margin-top: 4px;
+  color: rgba(255, 255, 255, 0.62);
+  font-size: 11px;
+}
+
+.apex-featured-offer {
+  padding: 38px;
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 28px;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #ddddE5;
+}
+
+.apex-featured-offer__image {
+  min-height: 320px;
+  display: grid;
+  place-items: center;
+  border-radius: 22px;
+  background:
+    radial-gradient(circle, rgba(126, 42, 232, 0.18), transparent 60%),
+    #15151d;
+}
+
+.apex-featured-offer__image img {
+  width: 82%;
+  max-height: 290px;
+  object-fit: contain;
+}
+
+.apex-featured-offer__discount {
+  display: inline-flex;
+  padding: 7px 12px;
+  border-radius: 999px;
+  color: #ffffff;
+  background: #8e38e8;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.apex-featured-offer h2 {
+  margin: 17px 0 8px;
+  color: #191922;
+  font-size: 34px;
+  font-weight: 800;
+}
+
+.apex-featured-offer__content > p {
+  color: #72727c;
+}
+
+.apex-featured-offer__specs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 9px;
+  margin: 22px 0;
+}
+
+.apex-featured-offer__specs span {
+  padding: 11px;
+  border-radius: 10px;
+  color: #5f5f6a;
+  background: #f3f3f6;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.apex-featured-offer__price {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin-bottom: 22px;
+}
+
+.apex-featured-offer__price del {
+  color: #92929a;
+}
+
+.apex-featured-offer__price strong {
+  color: #8229df;
+  font-size: 30px;
+}
+
+.apex-brands-grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 10px;
+}
+
+.apex-brands-grid div {
+  min-height: 78px;
+  display: grid;
+  place-items: center;
+  border-radius: 14px;
+  color: #22222b;
+  background: #ffffff;
+  border: 1px solid #dedee6;
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.apex-salla-components {
+  background: #f3f3f6;
+}
+
+.apex-reviews-section {
+  background: #eeeeF3;
+}
+
+.apex-reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.apex-review-card {
+  padding: 30px;
+  border-radius: 22px;
+  background: #ffffff;
+  border: 1px solid #dfdfe7;
+  box-shadow: 0 14px 34px rgba(30, 30, 45, 0.07);
+}
+
+.apex-review-card__stars {
+  margin-bottom: 18px;
+  color: #f7aa17;
+  letter-spacing: 3px;
+}
+
+.apex-review-card p {
+  min-height: 80px;
+  margin: 0;
+  color: #585863;
+  line-height: 1.9;
+}
+
+.apex-review-card__customer {
+  margin-top: 22px;
+  padding-top: 18px;
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #eeeeF2;
+}
+
+.apex-review-card__customer strong {
+  color: #24242e;
+}
+
+.apex-review-card__customer span {
+  margin-top: 3px;
+  color: #92929b;
+  font-size: 12px;
+}
+
+@media (max-width: 1199px) {
+  .apex-category-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .apex-brands-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (max-width: 991px) {
+  .apex-home-hero__box {
+    padding: 50px 36px;
+    grid-template-columns: 1fr;
+  }
+
+  .apex-home-hero__visual {
+    margin-top: 30px;
+  }
+
+  .apex-home-hero__visual img {
+    width: 300px;
+  }
+
+  .apex-weekly-grid,
+  .apex-featured-offer {
+    grid-template-columns: 1fr;
+  }
+
+  .apex-reviews-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 767px) {
+  .apex-home {
+    background:
+      radial-gradient(circle at 80% 4%, rgba(124, 42, 232, 0.14), transparent 20%),
+      linear-gradient(180deg, #101017 0%, #14141c 22%, #f3f3f6 22%, #f3f3f6 100%);
+  }
+
+  .apex-home-hero {
+    padding: 14px 0 25px;
+  }
+
+  .apex-home-hero__box {
+    min-height: auto;
+    padding: 34px 22px;
+    border-radius: 22px;
+  }
+
+  .apex-home-hero h1 {
+    font-size: 38px;
+  }
+
+  .apex-home-hero__content > p {
+    font-size: 15px;
+  }
+
+  .apex-home-hero__buttons {
+    flex-direction: column;
+  }
+
+  .apex-home-btn {
+    width: 100%;
+  }
+
+  .apex-home-hero__visual img {
+    width: 230px;
+  }
+
+  .apex-home-section {
+    padding: 38px 0;
+  }
+
+  .apex-category-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .apex-category-card {
+    min-height: 185px;
+    padding: 20px 15px;
+  }
+
+  .apex-category-card__icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 16px;
+    font-size: 23px;
+  }
+
+  .apex-countdown-card,
+  .apex-featured-offer {
+    padding: 24px;
+    border-radius: 20px;
+  }
+
+  .apex-countdown {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .apex-featured-offer__image {
+    min-height: 240px;
+  }
+
+  .apex-featured-offer h2 {
+    font-size: 27px;
+  }
+
+  .apex-brands-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

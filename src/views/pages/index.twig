@@ -1,14 +1,275 @@
-{#
-| Variable         | Type       | Description                                                         |
-|------------------|------------|---------------------------------------------------------------------|
-| page             | object     |                                                                     |
-| page.title       | string     | *could be html                                                      |
-| page.slug        | string     | ex: "cat.show"                                                      |
-#}
 {% extends "layouts.master" %}
+
 {% block content %}
+
+<main class="apex-home">
+
+  {# Hero #}
+  <section class="apex-home-hero">
+    <div class="container">
+      <div class="apex-home-hero__box">
+
+        <div class="apex-home-hero__content">
+          <span class="apex-home-hero__badge">أداء بلا حدود</span>
+
+          <h1>
+            أطلق العنان لقوتك
+            <strong>مع تجميعتك المثالية</strong>
+          </h1>
+
+          <p>
+            أحدث القطع، تجميع احترافي، أسعار تنافسية وضمان موثوق.
+          </p>
+
+          <div class="apex-home-hero__buttons">
+            <a href="/products" class="apex-home-btn apex-home-btn--primary">
+              تسوق الآن
+            </a>
+
+            <a href="/contact" class="apex-home-btn apex-home-btn--outline">
+              اطلب تجميعتك
+            </a>
+          </div>
+
+          <div class="apex-home-hero__features">
+            <span>ضمان موثوق</span>
+            <span>توصيل سريع</span>
+            <span>دعم فني</span>
+          </div>
+        </div>
+
+        <div class="apex-home-hero__visual">
+          <img
+            src="{{ 'images/apex-logo.png' | asset }}"
+            alt="Apex PC"
+          >
+          <div class="apex-home-hero__glow"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  {# Categories #}
+  <section class="apex-home-section">
+    <div class="container">
+
+      <div class="apex-home-heading">
+        <div>
+          <span>اكتشف خدماتنا</span>
+          <h2>التصنيفات الرئيسية</h2>
+        </div>
+      </div>
+
+      <div class="apex-category-grid">
+
+        <a href="/products" class="apex-category-card">
+          <div class="apex-category-card__icon">🖥️</div>
+          <h3>تجميعات PC</h3>
+          <p>تجميعات احترافية حسب الطلب</p>
+        </a>
+
+        <a href="/products" class="apex-category-card">
+          <div class="apex-category-card__icon">🎮</div>
+          <h3>تجميعات جاهزة</h3>
+          <p>خيارات جاهزة للألعاب والعمل</p>
+        </a>
+
+        <a href="/products" class="apex-category-card">
+          <div class="apex-category-card__icon">🧩</div>
+          <h3>المكونات</h3>
+          <p>قطع أصلية بأداء موثوق</p>
+        </a>
+
+        <a href="/products" class="apex-category-card">
+          <div class="apex-category-card__icon">🎧</div>
+          <h3>الملحقات</h3>
+          <p>كل ما تحتاجه لتجربة متكاملة</p>
+        </a>
+
+        <a href="/contact" class="apex-category-card">
+          <div class="apex-category-card__icon">🛠️</div>
+          <h3>الصيانة</h3>
+          <p>فحص وصيانة احترافية</p>
+        </a>
+
+        <a href="/contact" class="apex-category-card">
+          <div class="apex-category-card__icon">⚡</div>
+          <h3>الترقية</h3>
+          <p>طور جهازك بأحدث القطع</p>
+        </a>
+
+        <a href="/contact" class="apex-category-card">
+          <div class="apex-category-card__icon">🎙️</div>
+          <h3>الدعم الفني</h3>
+          <p>مساعدة سريعة وحلول احترافية</p>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  {# Weekly offer #}
+  <section class="apex-home-section apex-weekly-section">
+    <div class="container">
+      <div class="apex-weekly-grid">
+
+        <div class="apex-countdown-card">
+          <span class="apex-countdown-card__label">عرض محدود</span>
+          <h2>عرض الأسبوع</h2>
+          <p>ينتهي العرض خلال:</p>
+
+          <div class="apex-countdown">
+            <div>
+              <strong>02</strong>
+              <span>أيام</span>
+            </div>
+
+            <div>
+              <strong>14</strong>
+              <span>ساعات</span>
+            </div>
+
+            <div>
+              <strong>38</strong>
+              <span>دقائق</span>
+            </div>
+
+            <div>
+              <strong>59</strong>
+              <span>ثواني</span>
+            </div>
+          </div>
+
+          <a href="/products" class="apex-home-btn apex-home-btn--primary">
+            مشاهدة العروض
+          </a>
+        </div>
+
+        <div class="apex-featured-offer">
+
+          <div class="apex-featured-offer__image">
+            <img
+              src="{{ 'images/apex-logo.png' | asset }}"
+              alt="Apex PC weekly offer"
+            >
+          </div>
+
+          <div class="apex-featured-offer__content">
+            <span class="apex-featured-offer__discount">خصم 15%</span>
+
+            <h2>تجميعة Apex Ultra</h2>
+            <p>أداء قوي للألعاب والعمل وصناعة المحتوى.</p>
+
+            <div class="apex-featured-offer__specs">
+              <span>Intel Core i7</span>
+              <span>RTX Graphics</span>
+              <span>32GB DDR5</span>
+              <span>2TB NVMe</span>
+            </div>
+
+            <div class="apex-featured-offer__price">
+              <del>6,799 ر.س</del>
+              <strong>5,749 ر.س</strong>
+            </div>
+
+            <a href="/products" class="apex-home-btn apex-home-btn--primary">
+              أضف إلى السلة
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {# Brands #}
+  <section class="apex-home-section">
+    <div class="container">
+
+      <div class="apex-home-heading">
+        <div>
+          <span>شركاؤنا</span>
+          <h2>الماركات المعتمدة</h2>
+        </div>
+      </div>
+
+      <div class="apex-brands-grid">
+        <div>ASUS</div>
+        <div>MSI</div>
+        <div>Intel</div>
+        <div>AMD</div>
+        <div>NVIDIA</div>
+        <div>Corsair</div>
+        <div>Gigabyte</div>
+        <div>NZXT</div>
+        <div>HyperX</div>
+        <div>Logitech</div>
+      </div>
+
+    </div>
+  </section>
+
+  {# Existing Salla products and dynamic components #}
+  <section class="apex-salla-components">
     {% component home %}
+  </section>
+
+  {# Reviews #}
+  <section class="apex-home-section apex-reviews-section">
+    <div class="container">
+
+      <div class="apex-home-heading">
+        <div>
+          <span>آراء حقيقية</span>
+          <h2>تقييمات العملاء</h2>
+        </div>
+      </div>
+
+      <div class="apex-reviews-grid">
+
+        <article class="apex-review-card">
+          <div class="apex-review-card__stars">★★★★★</div>
+          <p>
+            التجميعة وصلت مرتبة وأداء الجهاز ممتاز، والدعم الفني كان سريعًا
+            ومتعاونًا.
+          </p>
+          <div class="apex-review-card__customer">
+            <strong>أحمد العتيبي</strong>
+            <span>الرياض</span>
+          </div>
+        </article>
+
+        <article class="apex-review-card">
+          <div class="apex-review-card__stars">★★★★★</div>
+          <p>
+            جودة عالية وتغليف ممتاز، واستلمت الطلب في الموعد بدون أي مشكلة.
+          </p>
+          <div class="apex-review-card__customer">
+            <strong>سارة القحطاني</strong>
+            <span>جدة</span>
+          </div>
+        </article>
+
+        <article class="apex-review-card">
+          <div class="apex-review-card__stars">★★★★★</div>
+          <p>
+            أسعار مناسبة وخدمة احترافية، وتم اختيار القطع المناسبة لميزانيتي.
+          </p>
+          <div class="apex-review-card__customer">
+            <strong>محمد الشهري</strong>
+            <span>الدمام</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
 {% endblock %}
+
 {% block scripts %}
-    <script defer src="{{ 'home.js' | asset }}"></script>
+  <script defer src="{{ 'home.js' | asset }}"></script>
 {% endblock %}
