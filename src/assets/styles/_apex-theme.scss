@@ -569,42 +569,11 @@ input:checked + label {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
   }
-/* Apex PC forced logo */
+/* Apex PC logo sizing */
 
 .navbar-brand {
-  min-width: 210px;
-}
-
-.navbar-brand .logo-wrapper {
-  display: block !important;
-  width: 210px;
-  height: 86px;
-  background: url("/images/apex-logo.png") center / contain no-repeat;
-}
-
-.navbar-brand .logo-wrapper img,
-.navbar-brand .logo-wrapper picture,
-.navbar-brand > img,
-.navbar-brand > picture,
-.navbar-brand svg {
-  display: none !important;
-}
-
-@media (max-width: 767px) {
-  .navbar-brand {
-    min-width: 135px;
-  }
-
-  .navbar-brand .logo-wrapper {
-    width: 135px;
-    height: 62px;
-  }
-}
-}/* Apex PC logo sizing */
-
-.navbar-brand {
-  min-width: 190px;
-  height: 92px;
+  min-width: 230px;
+  height: 110px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -612,8 +581,8 @@ input:checked + label {
 
 .navbar-brand img {
   display: block !important;
-  width: 185px !important;
-  height: 82px !important;
+  width: 220px !important;
+  height: 100px !important;
   max-width: none !important;
   max-height: none !important;
   object-fit: contain;
@@ -621,12 +590,13 @@ input:checked + label {
 
 @media (max-width: 767px) {
   .navbar-brand {
-    min-width: 125px;
-    height: 66px;
+    min-width: 145px;
+    height: 74px;
   }
 
   .navbar-brand img {
-    width: 120px !important;
-    height: 58px !important;
+    width: 140px !important;
+    height: 68px !important;
   }
+}
 }
