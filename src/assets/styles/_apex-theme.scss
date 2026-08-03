@@ -928,16 +928,16 @@ input:checked + label {
 
 .apex-home-hero__box {
   position: relative;
-  min-height: 530px;
-  padding: 70px;
+  min-height: 540px;
+  padding: 58px 70px;
   display: grid;
-  grid-template-columns: 1.05fr 0.95fr;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
   overflow: hidden;
   border-radius: 30px;
   color: #ffffff;
   background:
-    radial-gradient(circle at 75% 40%, rgba(124, 42, 232, 0.34), transparent 34%),
+    radial-gradient(circle at 25% 55%, rgba(124, 42, 232, 0.38), transparent 34%),
     linear-gradient(135deg, #11111a 0%, #171321 55%, #21113c 100%);
   border: 1px solid rgba(160, 100, 255, 0.34);
   box-shadow: 0 30px 80px rgba(0, 0, 0, 0.32);
@@ -1056,10 +1056,12 @@ input:checked + label {
 .apex-home-hero__visual img {
   position: relative;
   z-index: 2;
-  width: min(560px, 100%);
-  max-height: 500px;
+  width: min(620px, 100%);
+  max-height: 520px;
   object-fit: contain;
-  filter: drop-shadow(0 28px 45px rgba(0, 0, 0, 0.45));
+  object-position: center;
+  filter: drop-shadow(0 30px 50px rgba(0, 0, 0, 0.5));
+  transform: scale(1.12);
 }
 
 .apex-home-hero__glow {
@@ -1373,9 +1375,11 @@ input:checked + label {
 
 @media (max-width: 991px) {
   .apex-home-hero__box {
-    padding: 50px 36px;
-    grid-template-columns: 1fr;
-  }
+  min-height: auto;
+  padding: 34px 22px;
+  grid-template-columns: 1fr;
+  border-radius: 22px;
+}
 
   .apex-home-hero__visual {
     margin-top: 30px;
@@ -1429,7 +1433,10 @@ input:checked + label {
   }
 
   .apex-home-hero__visual img {
-  width: 290px;
+  width: 310px;
+  max-height: 340px;
+  transform: scale(1);
+}
 }
 
   .apex-home-section {
@@ -1473,4 +1480,114 @@ input:checked + label {
   .apex-brands-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+/* Best sellers */
+
+.apex-best-sellers {
+  background: #f3f3f6;
+}
+
+.apex-section-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 42px;
+  padding: 0 18px;
+  border-radius: 12px;
+  color: #7326ce !important;
+  background: #ffffff;
+  border: 1px solid rgba(124, 42, 232, 0.22);
+  font-size: 13px;
+  font-weight: 800;
+  text-decoration: none !important;
+  transition: 0.2s ease;
+}
+
+.apex-section-link:hover {
+  color: #ffffff !important;
+  background: #7c2ae8;
+  border-color: #7c2ae8;
+  transform: translateY(-2px);
+}
+
+.apex-salla-components {
+  padding-bottom: 20px;
+  background: transparent;
+}
+
+@media (max-width: 767px) {
+  .apex-best-sellers .apex-home-heading {
+    align-items: center;
+    gap: 12px;
+  }
+
+  .apex-section-link {
+    min-height: 38px;
+    padding: 0 12px;
+    font-size: 11px;
+  }
+}/* Customer reviews improvements */
+
+.apex-review-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.apex-review-card::before {
+  content: "“";
+  position: absolute;
+  top: 2px;
+  inset-inline-end: 20px;
+  color: rgba(124, 42, 232, 0.08);
+  font-size: 110px;
+  font-family: serif;
+  line-height: 1;
+}
+
+.apex-review-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(124, 42, 232, 0.35);
+  box-shadow: 0 22px 45px rgba(124, 42, 232, 0.12);
+}
+
+.apex-review-card {
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+/* Brands */
+
+.apex-brands-grid div {
+  position: relative;
+  overflow: hidden;
+  transition:
+    transform 0.22s ease,
+    color 0.22s ease,
+    border-color 0.22s ease,
+    box-shadow 0.22s ease;
+}
+
+.apex-brands-grid div:hover {
+  color: #7c2ae8;
+  transform: translateY(-4px);
+  border-color: rgba(124, 42, 232, 0.4);
+  box-shadow: 0 14px 30px rgba(124, 42, 232, 0.1);
+}
+/* Weekly offer improvements */
+
+.apex-featured-offer__image img {
+  width: 88%;
+  max-height: 310px;
+  object-fit: contain;
+  filter: drop-shadow(0 22px 35px rgba(0, 0, 0, 0.35));
+}
+
+.apex-countdown div {
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.apex-countdown div:hover {
+  transform: translateY(-3px);
+  border-color: rgba(174, 101, 255, 0.55);
 }
