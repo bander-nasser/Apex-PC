@@ -1,33 +1,84 @@
 {#
-| Variable                       | Type     | Description                                                                  |
-|--------------------------------|----------|------------------------------------------------------------------------------|
-| component                      | object   | Contains merchant settings for fields from twilight.json `component` section |
-| component.slides[].image       | string   | Image url                                                                    |
-| component.slides[].title       | ?string  |                                                                              |
-| component.slides[].description | ?string  |                                                                              |
-| component.slides               | object[] | list of slides                                                               |
-| position                       | int      | Sorting number start from zero                                               |
+| Variable                       | Type     | Description
+|--------------------------------|----------|----------------------------------------------|
+| component                      | object   | Merchant settings from twilight.json         |
+| component.slides[].image       | string   | Image URL                                    |
+| component.slides[].title       | ?string  | Slide title                                  |
+| component.slides[].description | ?string  | Slide description                            |
+| component.slides[].url         | ?string  | Primary button link                          |
+| component.slides[].btnname     | ?string  | Primary button text                          |
+| component.slides               | object[] | Slides list                                  |
+| position                       | int      | Sorting number                               |
 #}
-<section data-testid="store-home-slider" class="s-block s-block--hero-slider s-block--full-bg wide-placeholder"> 
-    <salla-slider 
-      id="main-slider-{{ position }}"
-      auto-play
-      static-when-single
-      slider-config='{"lazy":"false"}'
-      {{ component.slides|length > 1 ? '' : 'show-controls="false"' }}
-      type="fullwidth">
-        <div slot="items">
-            {% for slide in component.slides %}
-                <div class="swiper-slide w-full min-h-[300px] lg:min-h-[528px] bg-dark relative">
-					<div style="background-image: url({{ slide.image }});" class="{{ slide.without_overlay ? '' : 'overlay-bg' }} bg-cover bg-center absolute inset-0"></div>
-                    <div class="flex-center container pb-16 sm:pb-0 home-slider__content relative h-full">
-                        <div class=" w-4/6 text-center md:w-7/12 lg:w-5/12 text-white">
-                            <h2 data-swiper-parallax="-500" class="lg:text-title-size font-bold leading-tight mb-4">{{ slide.title }}</h2>
-                            <p data-swiper-parallax="-300" class="line-clamp-2 description">{{ slide.description }}</p>
-                        </div>
-                    </div>
-                </div>
-            {% endfor %}
+
+<section
+  data-testid="store-home-slider"
+  class="s-block s-block--hero-slider apex-hero-slider"
+>
+  <salla-slider
+    id="main-slider-{{ position }}"
+    auto-play
+    static-when-single
+    slider-config='{"lazy":false,"speed":700}'
+    {{ component.slides|length > 1 ? '' : 'show-controls="false"' }}
+    type="fullwidth"
+  >
+    <div slot="items">
+      {% for slide in component.slides %}
+        <div class="swiper-slide apex-hero-slide">
+          
+          <div
+            class="apex-hero-slide__background {{ slide.without_overlay ? '' : 'apex-hero-slide__overlay' }}"
+            style="background-image: url('{{ slide.image }}');"
+          ></div>
+
+          <div class="container apex-hero-slide__container">
+            <div class="apex-hero-slide__content">
+
+              {% if slide.title %}
+                <h2
+                  data-swiper-parallax="-500"
+                  class="apex-hero-slide__title"
+                >
+                  {{ slide.title }}
+                </h2>
+              {% endif %}
+
+              {% if slide.description %}
+                <p
+                  data-swiper-parallax="-300"
+                  class="apex-hero-slide__description"
+                >
+                  {{ slide.description }}
+                </p>
+              {% endif %}
+
+              <div class="apex-hero-slide__actions">
+                <a
+                  href="{{ slide.url ?: '#' }}"
+                  class="apex-btn apex-btn--primary"
+                >
+                  {{ slide.btnname ?: 'تسوق الآن' }}
+                </a>
+
+                <a
+                  href="/pages/build-your-pc"
+                  class="apex-btn apex-btn--secondary"
+                >
+                  ابنِ تجميعتك
+                </a>
+              </div>
+
+              <div class="apex-hero-slide__features">
+                <span>ضمان موثوق</span>
+                <span>توصيل سريع</span>
+                <span>دعم فني متخصص</span>
+              </div>
+
+            </div>
+          </div>
         </div>
-    </salla-slider>
-</section> 
+      {% endfor %}
+    </div>
+  </salla-slider>
+</section>
