@@ -569,27 +569,35 @@ input:checked + label {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
   }
-}/* Apex PC forced logo */
+/* Apex PC forced logo */
 
 .navbar-brand {
-  width: 210px;
-  height: 86px;
-  flex-shrink: 0;
-  background-image: url("/images/apex-logo.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
+  min-width: 210px;
 }
 
-.navbar-brand img,
-.navbar-brand picture,
+.navbar-brand .logo-wrapper {
+  display: block !important;
+  width: 210px;
+  height: 86px;
+  background: url("/images/apex-logo.png") center / contain no-repeat;
+}
+
+.navbar-brand .logo-wrapper img,
+.navbar-brand .logo-wrapper picture,
+.navbar-brand > img,
+.navbar-brand > picture,
 .navbar-brand svg {
   display: none !important;
 }
 
 @media (max-width: 767px) {
   .navbar-brand {
+    min-width: 135px;
+  }
+
+  .navbar-brand .logo-wrapper {
     width: 135px;
     height: 62px;
   }
+}
 }
