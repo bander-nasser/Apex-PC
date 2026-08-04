@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+function initApexBudgetBuilder() {
   const page = document.getElementById("apex-budget-builder");
 
   if (!page || !window.ApexProducts) {
@@ -209,4 +209,10 @@ if (unavailablePart) {
           alert("تعذر إضافة بعض القطع إلى السلة.");
         });
     });
-});
+}
+
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", initApexBudgetBuilder);
+} else {
+  initApexBudgetBuilder();
+}

@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+function initApexPcBuilder() {
   const builder = document.getElementById("apex-pc-builder");
 
   if (!builder || !window.ApexProducts || !window.ApexCompatibility) {
@@ -244,4 +244,10 @@ if (part === "cooler") {
 
   initializeSelects();
   updateSummary();
-});
+}
+
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", initApexPcBuilder);
+} else {
+  initApexPcBuilder();
+}
