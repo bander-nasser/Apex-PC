@@ -2063,3 +2063,415 @@ input:checked + label {
   background: #7c2ae8;
   border-color: #7c2ae8;
 }
+/* =========================
+   Apex PC Builder Page
+========================= */
+
+.apex-builder-page {
+  padding: 48px 0 80px;
+  background:
+    radial-gradient(circle at top right, rgba(124, 42, 232, 0.16), transparent 34%),
+    linear-gradient(180deg, #0b0714 0%, #08080b 100%);
+  color: #fff;
+}
+
+.apex-builder-page .container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 18px;
+}
+
+.apex-builder-hero {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.apex-builder-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 9px 16px;
+  margin-bottom: 16px;
+  border: 1px solid rgba(168, 85, 247, 0.45);
+  border-radius: 999px;
+  background: rgba(124, 42, 232, 0.12);
+  color: #c084fc;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.apex-builder-hero h1 {
+  margin: 0;
+  font-size: clamp(32px, 5vw, 54px);
+  line-height: 1.15;
+  color: #fff;
+}
+
+.apex-builder-hero p {
+  max-width: 720px;
+  margin: 14px auto 0;
+  color: #b8b5c0;
+  font-size: 17px;
+  line-height: 1.9;
+}
+
+.apex-builder-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 380px;
+  gap: 24px;
+  align-items: start;
+}
+
+.apex-builder-parts {
+  display: grid;
+  gap: 16px;
+}
+
+.apex-builder-step {
+  display: grid;
+  grid-template-columns: 54px minmax(0, 1fr);
+  gap: 16px;
+  align-items: start;
+  padding: 22px;
+  border: 1px solid rgba(168, 85, 247, 0.2);
+  border-radius: 20px;
+  background:
+    linear-gradient(145deg, rgba(21, 21, 26, 0.98), rgba(13, 12, 18, 0.98));
+  box-shadow: 0 16px 45px rgba(0, 0, 0, 0.22);
+  transition: 0.25s ease;
+}
+
+.apex-builder-step:hover {
+  transform: translateY(-2px);
+  border-color: rgba(168, 85, 247, 0.55);
+  box-shadow: 0 18px 48px rgba(124, 42, 232, 0.12);
+}
+
+.apex-builder-step__number {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #7c2ae8, #a855f7);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 900;
+  box-shadow: 0 10px 28px rgba(124, 42, 232, 0.35);
+}
+
+.apex-builder-step__content h2 {
+  margin: 0 0 5px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.apex-builder-step__content p {
+  margin: 0 0 16px;
+  color: #8d8995;
+  line-height: 1.7;
+}
+
+.apex-builder-step select,
+.apex-budget-field select,
+.apex-budget-field input {
+  width: 100%;
+  min-height: 54px;
+  padding: 0 16px;
+  border: 1px solid #29252f;
+  border-radius: 14px;
+  background: #0d0c12;
+  color: #fff;
+  font-size: 15px;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+.apex-builder-step select:focus,
+.apex-budget-field select:focus,
+.apex-budget-field input:focus {
+  border-color: #a855f7;
+  box-shadow: 0 0 0 4px rgba(168, 85, 247, 0.12);
+}
+
+.apex-builder-step select:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.apex-builder-summary {
+  position: sticky;
+  top: 110px;
+  padding: 24px;
+  border: 1px solid rgba(168, 85, 247, 0.35);
+  border-radius: 22px;
+  background:
+    linear-gradient(160deg, rgba(24, 19, 38, 0.98), rgba(13, 12, 18, 0.98));
+  box-shadow:
+    0 24px 60px rgba(0, 0, 0, 0.35),
+    0 0 35px rgba(124, 42, 232, 0.1);
+}
+
+.apex-builder-summary__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.apex-builder-summary__header h2 {
+  margin: 0;
+  color: #fff;
+  font-size: 22px;
+}
+
+.apex-builder-status {
+  padding: 7px 11px;
+  border-radius: 999px;
+  background: rgba(168, 85, 247, 0.12);
+  color: #c084fc;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.apex-builder-selected {
+  min-height: 120px;
+  margin-bottom: 18px;
+  padding: 16px;
+  border: 1px dashed rgba(168, 85, 247, 0.3);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.apex-builder-empty {
+  margin: 0;
+  color: #8d8995;
+  text-align: center;
+}
+
+.apex-builder-power,
+.apex-builder-total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 15px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.apex-builder-power span,
+.apex-builder-total span {
+  color: #b8b5c0;
+}
+
+.apex-builder-power strong {
+  color: #fff;
+}
+
+.apex-builder-total strong {
+  color: #c084fc;
+  font-size: 25px;
+}
+
+.apex-builder-warning {
+  margin: 14px 0;
+  padding: 13px 15px;
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  border-radius: 13px;
+  background: rgba(245, 158, 11, 0.08);
+  color: #fbbf24;
+}
+
+.apex-builder-submit,
+#budget-generate,
+#budget-add-cart,
+#budget-edit-build {
+  width: 100%;
+  min-height: 54px;
+  border: 0;
+  border-radius: 14px;
+  font-weight: 900;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.apex-builder-submit,
+#budget-generate,
+#budget-add-cart {
+  background: linear-gradient(135deg, #7c2ae8, #9333ea);
+  color: #fff;
+  box-shadow: 0 14px 35px rgba(124, 42, 232, 0.3);
+}
+
+.apex-builder-submit:hover,
+#budget-generate:hover,
+#budget-add-cart:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 42px rgba(124, 42, 232, 0.42);
+}
+
+.apex-builder-submit:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+  transform: none;
+  box-shadow: none;
+}
+
+.apex-builder-note {
+  margin: 13px 0 0;
+  color: #8d8995;
+  font-size: 12px;
+  line-height: 1.7;
+  text-align: center;
+}
+
+/* Budget Builder */
+
+.apex-budget-page {
+  padding: 48px 0 80px;
+  background:
+    radial-gradient(circle at top left, rgba(124, 42, 232, 0.17), transparent 34%),
+    #08080b;
+  color: #fff;
+}
+
+.apex-budget-form {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px;
+  border: 1px solid rgba(168, 85, 247, 0.25);
+  border-radius: 22px;
+  background: #111114;
+}
+
+.apex-budget-field {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.apex-budget-field label {
+  color: #fff;
+  font-weight: 800;
+}
+
+.apex-budget-field span {
+  color: #8d8995;
+  font-size: 12px;
+}
+
+#budget-generate {
+  grid-column: 1 / -1;
+  max-width: 280px;
+  justify-self: center;
+}
+
+.apex-budget-result {
+  max-width: 1100px;
+  margin: 24px auto 0;
+  padding: 24px;
+  border: 1px solid rgba(168, 85, 247, 0.3);
+  border-radius: 22px;
+  background: #111114;
+}
+
+.apex-budget-result__header {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.apex-budget-result__header h2 {
+  margin: 5px 0 0;
+  color: #fff;
+}
+
+.apex-budget-result__header strong {
+  color: #c084fc;
+  font-size: 26px;
+}
+
+.apex-budget-parts {
+  display: grid;
+  gap: 12px;
+}
+
+.apex-budget-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+#budget-edit-build {
+  border: 1px solid rgba(168, 85, 247, 0.4);
+  background: transparent;
+  color: #fff;
+}
+
+/* Remove white content wrapper from informational pages */
+.content-entry:has(.apex-builder-page),
+.content-entry:has(.apex-budget-page) {
+  padding: 0 !important;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+.content-entry:has(.apex-builder-page) > h1,
+.content-entry:has(.apex-budget-page) > h1 {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .apex-builder-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .apex-builder-summary {
+    position: static;
+  }
+
+  .apex-budget-form {
+    grid-template-columns: 1fr;
+  }
+
+  #budget-generate {
+    grid-column: auto;
+    max-width: none;
+  }
+}
+
+@media (max-width: 575px) {
+  .apex-builder-page,
+  .apex-budget-page {
+    padding: 28px 0 55px;
+  }
+
+  .apex-builder-step {
+    grid-template-columns: 42px minmax(0, 1fr);
+    padding: 17px;
+  }
+
+  .apex-builder-step__number {
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+  }
+
+  .apex-builder-summary {
+    padding: 18px;
+  }
+
+  .apex-budget-actions {
+    grid-template-columns: 1fr;
+  }
+}

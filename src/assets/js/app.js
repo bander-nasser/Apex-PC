@@ -285,3 +285,4 @@ isElementLoaded(selector){
 }
 
 salla.onReady(() => (new App).loadTheApp());
+import "./apex-builder";
