@@ -115,6 +115,17 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     generatedBuild = generateBuild(budget, resolution);
+    const unavailablePart = generatedBuild.find(
+  item => !item.product
+);
+
+if (unavailablePart) {
+  alert(
+    `لا يوجد خيار مناسب حاليًا لقسم: ${unavailablePart.label}`
+  );
+  result.hidden = true;
+  return;
+}
 
     const total = generatedBuild.reduce(
       (sum, item) => sum + (item.product?.price || 0),
@@ -152,18 +163,50 @@ document.addEventListener("DOMContentLoaded", () => {
     result.scrollIntoView({ behavior: "smooth", block: "start" });
   });
 
-  document
-    .getElementById("budget-edit-build")
-    ?.addEventListener("click", () => {
-      result.hidden = true;
-      amountInput.focus();
-    });
-
-  document
+    document
     .getElementById("budget-add-cart")
     ?.addEventListener("click", () => {
-      alert(
-        "سنربط هذا الزر بالسلة بعد إدخال أرقام منتجات متجرك الحقيقية."
+      if (!generatedBuild.length) {
+        return;
+      }
+
+      const products = generatedBuild
+        .map(item => item.product)
+        .filter(Boolean);
+
+      const missingSallaId = products.some(
+        product => !product.sallaProductId
       );
+
+      if (missingSallaId) {
+        alert(
+          "التجميعة جاهزة، لكن يجب ربط القطع بمنتجات المتجر الحقيقية قبل إضافتها للسلة."
+        );
+        return;
+      }
+
+      const button = document.getElementById("budget-add-cart");
+
+      button.disabled = true;
+      button.textContent = "جارٍ إضافة التجميعة...";
+
+      Promise.all(
+        products.map(product =>
+          salla.cart.addItem({
+            id: product.sallaProductId,
+            quantity: 1
+          })
+        )
+      )
+        .then(() => {
+          button.textContent = "تمت الإضافة إلى السلة";
+          window.location.href = salla.url.get("cart");
+        })
+        .catch(error => {
+          console.error("Apex budget cart error:", error);
+          button.disabled = false;
+          button.textContent = "أضف التجميعة إلى السلة";
+          alert("تعذر إضافة بعض القطع إلى السلة.");
+        });
     });
 });

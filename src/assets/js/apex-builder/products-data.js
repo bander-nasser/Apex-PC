@@ -2,6 +2,7 @@ window.ApexProducts = {
   cpu: [
     {
       id: 101,
+      sallaProductId: null,
       name: "AMD Ryzen 5 7600",
       price: 849,
       socket: "AM5",
@@ -10,6 +11,7 @@ window.ApexProducts = {
     },
     {
       id: 102,
+      sallaProductId: null,
       name: "AMD Ryzen 7 7800X3D",
       price: 1649,
       socket: "AM5",
@@ -18,6 +20,7 @@ window.ApexProducts = {
     },
     {
       id: 103,
+      sallaProductId: null,
       name: "Intel Core i5-14400F",
       price: 899,
       socket: "LGA1700",
@@ -29,6 +32,7 @@ window.ApexProducts = {
   motherboard: [
     {
       id: 201,
+      sallaProductId: null,
       name: "B650 Gaming WiFi DDR5",
       price: 749,
       socket: "AM5",
@@ -37,6 +41,7 @@ window.ApexProducts = {
     },
     {
       id: 202,
+      sallaProductId: null,
       name: "B650M Gaming DDR5",
       price: 599,
       socket: "AM5",
@@ -45,6 +50,7 @@ window.ApexProducts = {
     },
     {
       id: 203,
+      sallaProductId: null,
       name: "B760 Gaming WiFi DDR5",
       price: 699,
       socket: "LGA1700",
@@ -56,6 +62,7 @@ window.ApexProducts = {
   gpu: [
     {
       id: 301,
+      sallaProductId: null,
       name: "RTX 4060 8GB",
       price: 1499,
       wattage: 115,
@@ -63,6 +70,7 @@ window.ApexProducts = {
     },
     {
       id: 302,
+      sallaProductId: null,
       name: "RTX 4070 Super 12GB",
       price: 2799,
       wattage: 220,
@@ -70,6 +78,7 @@ window.ApexProducts = {
     },
     {
       id: 303,
+      sallaProductId: null,
       name: "RTX 5070 12GB",
       price: 3299,
       wattage: 250,
@@ -80,12 +89,14 @@ window.ApexProducts = {
   ram: [
     {
       id: 401,
+      sallaProductId: null,
       name: "16GB DDR5 5600MHz",
       price: 249,
       ramType: "DDR5"
     },
     {
       id: 402,
+      sallaProductId: null,
       name: "32GB DDR5 6000MHz",
       price: 449,
       ramType: "DDR5"
@@ -95,12 +106,14 @@ window.ApexProducts = {
   storage: [
     {
       id: 501,
+      sallaProductId: null,
       name: "NVMe SSD 1TB",
       price: 299,
       wattage: 8
     },
     {
       id: 502,
+      sallaProductId: null,
       name: "NVMe SSD 2TB",
       price: 549,
       wattage: 10
@@ -110,6 +123,7 @@ window.ApexProducts = {
   cooler: [
     {
       id: 601,
+      sallaProductId: null,
       name: "Air Cooler 120mm",
       price: 159,
       sockets: ["AM5", "LGA1700"],
@@ -118,6 +132,7 @@ window.ApexProducts = {
     },
     {
       id: 602,
+      sallaProductId: null,
       name: "Liquid Cooler 240mm",
       price: 399,
       sockets: ["AM5", "LGA1700"],
@@ -126,6 +141,7 @@ window.ApexProducts = {
     },
     {
       id: 603,
+      sallaProductId: null,
       name: "Liquid Cooler 360mm",
       price: 599,
       sockets: ["AM5", "LGA1700"],
@@ -137,18 +153,21 @@ window.ApexProducts = {
   psu: [
     {
       id: 701,
+      sallaProductId: null,
       name: "650W 80+ Bronze",
       price: 299,
       capacity: 650
     },
     {
       id: 702,
+      sallaProductId: null,
       name: "750W 80+ Gold",
       price: 449,
       capacity: 750
     },
     {
       id: 703,
+      sallaProductId: null,
       name: "850W 80+ Gold",
       price: 599,
       capacity: 850
@@ -158,6 +177,7 @@ window.ApexProducts = {
   case: [
     {
       id: 801,
+      sallaProductId: null,
       name: "Apex Flow ATX Case",
       price: 349,
       formFactors: ["ATX", "MATX"],
@@ -166,6 +186,7 @@ window.ApexProducts = {
     },
     {
       id: 802,
+      sallaProductId: null,
       name: "Apex Mini MATX Case",
       price: 279,
       formFactors: ["MATX"],

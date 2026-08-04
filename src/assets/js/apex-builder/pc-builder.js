@@ -209,20 +209,27 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       if (part === "cpu") {
-        delete selected.motherboard;
-        delete selected.ram;
-        delete selected.cooler;
-        delete selected.case;
-      }
+  delete selected.motherboard;
+  delete selected.ram;
+  delete selected.cooler;
+  delete selected.psu;
+  delete selected.case;
+}
 
-      if (part === "motherboard") {
-        delete selected.ram;
-        delete selected.case;
-      }
+if (part === "motherboard") {
+  delete selected.ram;
+  delete selected.case;
+}
 
-      if (part === "gpu" || part === "cooler") {
-        delete selected.case;
-      }
+if (part === "gpu") {
+  delete selected.psu;
+  delete selected.case;
+}
+
+if (part === "cooler") {
+  delete selected.psu;
+  delete selected.case;
+}
 
       updateAvailableParts();
       updateSummary();
