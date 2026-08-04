@@ -2,9 +2,9 @@
 
 {% block content %}
 
-  {% set current_url = url_current() %}
+  {% set current_title = page.title|default('')|trim %}
 
-  {% if 'pc-builder' in current_url or 'ابن-تجميعتك' in current_url %}
+{% if current_title == 'ابنِ تجميعتك' or current_title == 'ابن تجميعتك' %}
 
     <main class="apex-builder-page" id="apex-pc-builder">
       <div class="container">
@@ -160,8 +160,7 @@
       </div>
     </main>
 
-  {% elseif 'budget-builder' in current_url or 'حسب-ميزانيتك' in current_url %}
-
+{% elseif current_title == 'ابنِ حسب ميزانيتك' or current_title == 'ابن حسب ميزانيتك' %}
     <main class="apex-budget-page" id="apex-budget-builder">
       <div class="container">
 
