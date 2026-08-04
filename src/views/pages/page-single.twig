@@ -2,9 +2,9 @@
 
 {% block content %}
 
- {% set current_url = url_current() %}
+ {% set page_content = page.content|default('') %}
 
-{% if 'page-1684364942' in current_url %}
+{% if 'APEX_PC_BUILDER' in page_content %}
     <main class="apex-builder-page" id="apex-pc-builder">
       <div class="container">
 
@@ -159,7 +159,7 @@
       </div>
     </main>
 
-{% elseif 'page-910327183' in current_url %}
+{% elseif 'APEX_BUDGET_BUILDER' in page_content %}
     <main class="apex-budget-page" id="apex-budget-builder">
       <div class="container">
 
