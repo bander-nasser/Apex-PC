@@ -2052,4 +2052,14 @@ input:checked + label {
     flex-direction: column;
     gap: 12px;
   }
+}.apex-home-btn--budget {
+  color: #d8b4fe !important;
+  background: rgba(124, 42, 232, 0.12);
+  border: 1px solid rgba(168, 85, 247, 0.45);
+}
+
+.apex-home-btn--budget:hover {
+  color: #fff !important;
+  background: #7c2ae8;
+  border-color: #7c2ae8;
 }
