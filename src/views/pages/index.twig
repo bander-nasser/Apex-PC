@@ -4,7 +4,7 @@
 
 <main class="apex-home">
 
-  {# Hero #}
+  {# ==================== Hero ==================== #}
   <section class="apex-home-hero">
     <div class="container">
       <div class="apex-home-hero__box">
@@ -45,11 +45,8 @@
     </div>
   </section>
 
-  {# ================= ابنِ حسب ميزانيتك ================= #}
-  {#
-     لتعديل الأسعار أو الأوصاف أو الروابط، عدّل داخل هذا القسم فقط.
-  #}
-  <section id="apex-budget" class="apex-home-section apex-budget-section">
+  {# ==================== ابنِ حسب ميزانيتك ==================== #}
+  <section id="apex-budget" class="apex-home-section">
     <div class="container">
 
       <div class="apex-home-heading">
@@ -113,106 +110,8 @@
     </div>
   </section>
 
-  <style>
-    .apex-budget-intro{
-      max-width: 60ch;
-      margin: 0 0 32px;
-      opacity: .75;
-      line-height: 1.8;
-    }
-
-    .apex-budget-grid{
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-    }
-    @media (max-width: 900px){
-      .apex-budget-grid{ grid-template-columns: 1fr; }
-    }
-
-    .apex-budget-card{
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      padding: 30px 26px;
-      border-radius: 20px;
-      text-decoration: none;
-      color: inherit;
-      background: linear-gradient(160deg, rgba(139,92,246,.10), rgba(139,92,246,.02));
-      border: 1px solid rgba(139,92,246,.22);
-      transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease;
-    }
-    .apex-budget-card:hover{
-      transform: translateY(-6px);
-      border-color: rgba(167,139,250,.65);
-      box-shadow: 0 18px 44px rgba(109,40,217,.28);
-    }
-
-    .apex-budget-card--featured{
-      background: linear-gradient(160deg, rgba(139,92,246,.24), rgba(139,92,246,.06));
-      border-color: rgba(167,139,250,.55);
-    }
-
-    .apex-budget-card__flag{
-      position: absolute;
-      top: 16px;
-      inset-inline-start: 22px;
-      font-size: 11px;
-      font-weight: 700;
-      padding: 5px 12px;
-      border-radius: 99px;
-      background: #8B5CF6;
-      color: #fff;
-    }
-
-    .apex-budget-card__tier{
-      font-size: 19px;
-      font-weight: 800;
-      margin-bottom: 14px;
-    }
-
-    .apex-budget-card__price{
-      display: flex;
-      align-items: baseline;
-      gap: 7px;
-      margin-bottom: 16px;
-      flex-wrap: wrap;
-    }
-    .apex-budget-card__price span{ font-size: 13px; opacity: .6; }
-    .apex-budget-card__price strong{
-      font-size: 36px;
-      font-weight: 800;
-      line-height: 1;
-      color: #C4B5FD;
-    }
-    .apex-budget-card__price em{ font-style: normal; font-size: 15px; opacity: .8; }
-
-    .apex-budget-card p{
-      font-size: 14px;
-      line-height: 1.85;
-      opacity: .72;
-      margin: 0 0 24px;
-      flex: 1;
-    }
-
-    .apex-budget-card__cta{
-      display: inline-block;
-      align-self: flex-start;
-      padding: 11px 22px;
-      border-radius: 11px;
-      font-size: 14px;
-      font-weight: 700;
-      background: rgba(139,92,246,.18);
-      border: 1px solid rgba(167,139,250,.45);
-      transition: background .25s ease;
-    }
-    .apex-budget-card:hover .apex-budget-card__cta{
-      background: #8B5CF6;
-      color: #fff;
-    }
-  </style>
-
-  {# Categories #}
+  {# ==================== التصنيفات الرئيسية ==================== #}
+  {# لتغيير أي تصنيف: عدّل href والعنوان والوصف فقط #}
   <section id="apex-categories" class="apex-home-section">
     <div class="container">
 
@@ -225,82 +124,70 @@
 
       <div class="apex-category-grid">
 
-        <a href="/products" class="apex-category-card">
-          <div class="apex-category-card__icon">🖥️</div>
-          <h3>تجميعات PC</h3>
-          <p>تجميعات احترافية حسب الطلب</p>
+        <a
+          href="https://apexpc.store/ar/%D8%AA%D8%AC%D9%85%D9%8A%D8%B9%D8%A7%D8%AA%20%D8%A5%D9%82%D8%AA%D8%B5%D8%A7%D8%AF%D9%8A%D8%A9/c729038447"
+          class="apex-cat"
+        >
+          <span class="apex-cat__icon">💻</span>
+          <h3>تجميعات اقتصادية</h3>
+          <p>أفضل قيمة مقابل السعر</p>
         </a>
 
-        <a href="/products" class="apex-category-card">
-          <div class="apex-category-card__icon">🎮</div>
-          <h3>تجميعات جاهزة</h3>
-          <p>خيارات جاهزة للألعاب والعمل</p>
+        <a
+          href="https://apexpc.store/ar/%D8%AA%D8%AC%D9%85%D9%8A%D8%B9%D8%A7%D8%AA%20%D9%85%D8%AA%D9%88%D8%B3%D8%B7%D8%A9/c1927395947"
+          class="apex-cat"
+        >
+          <span class="apex-cat__icon">🎮</span>
+          <h3>تجميعات متوسطة</h3>
+          <p>أداء متوازن للألعاب</p>
         </a>
 
-        <a href="/products" class="apex-category-card">
-          <div class="apex-category-card__icon">🧩</div>
+        <a
+          href="https://apexpc.store/ar/%D8%AA%D8%AC%D9%85%D9%8A%D8%B9%D8%A7%D8%AA%20%D8%A5%D8%AD%D8%AA%D8%B1%D8%A7%D9%81%D9%8A%D8%A9/c1288624500"
+          class="apex-cat"
+        >
+          <span class="apex-cat__icon">🚀</span>
+          <h3>تجميعات احترافية</h3>
+          <p>للألعاب التنافسية والمونتاج</p>
+        </a>
+
+        <a href="/products" class="apex-cat">
+          <span class="apex-cat__icon">🧩</span>
           <h3>المكونات</h3>
           <p>قطع أصلية بأداء موثوق</p>
         </a>
 
-        <a href="/products" class="apex-category-card">
-          <div class="apex-category-card__icon">🎧</div>
+        <a href="/products" class="apex-cat">
+          <span class="apex-cat__icon">🎧</span>
           <h3>الملحقات</h3>
           <p>كل ما تحتاجه لتجربة متكاملة</p>
         </a>
 
-        <a href="/contact" class="apex-category-card">
-          <div class="apex-category-card__icon">🛠️</div>
-          <h3>الصيانة</h3>
-          <p>فحص وصيانة احترافية</p>
-        </a>
-
-        <a href="/contact" class="apex-category-card">
-          <div class="apex-category-card__icon">⚡</div>
-          <h3>الترقية</h3>
-          <p>طور جهازك بأحدث القطع</p>
-        </a>
-
-        <a href="/contact" class="apex-category-card">
-          <div class="apex-category-card__icon">🎙️</div>
-          <h3>الدعم الفني</h3>
-          <p>مساعدة سريعة وحلول احترافية</p>
+        <a href="/contact" class="apex-cat">
+          <span class="apex-cat__icon">🛠️</span>
+          <h3>الصيانة والترقية</h3>
+          <p>فحص وصيانة وتطوير احترافي</p>
         </a>
 
       </div>
     </div>
   </section>
 
-  {# Weekly offer #}
-  <section class="apex-home-section apex-weekly-section">
+  {# ==================== عرض الأسبوع ==================== #}
+  <section class="apex-home-section">
     <div class="container">
-      <div class="apex-weekly-grid">
+      <div class="apex-weekly">
 
-        <div class="apex-countdown-card">
-          <span class="apex-countdown-card__label">عرض محدود</span>
+        <div class="apex-weekly__text">
+          <span class="apex-weekly__label">عرض محدود</span>
           <h2>عرض الأسبوع</h2>
           <p>ينتهي العرض خلال:</p>
 
-          <div class="apex-countdown">
-            <div>
-              <strong>02</strong>
-              <span>أيام</span>
-            </div>
-
-            <div>
-              <strong>14</strong>
-              <span>ساعات</span>
-            </div>
-
-            <div>
-              <strong>38</strong>
-              <span>دقائق</span>
-            </div>
-
-            <div>
-              <strong>59</strong>
-              <span>ثواني</span>
-            </div>
+          <div class="apex-countdown" id="apexCountdown">
+            <div><strong data-cd="days">--</strong><span>أيام</span></div>
+            <div><strong data-cd="hours">--</strong><span>ساعات</span></div>
+            <div><strong data-cd="mins">--</strong><span>دقائق</span></div>
+            <div><strong data-cd="secs">--</strong><span>ثواني</span></div>
           </div>
 
           <a href="/products" class="apex-home-btn apex-home-btn--primary">
@@ -308,71 +195,46 @@
           </a>
         </div>
 
-        <div class="apex-featured-offer">
+        <div class="apex-weekly__glow"></div>
 
-          <div class="apex-featured-offer__image">
-            <img
-              src="{{ 'images/apex-logo.png' | asset }}"
-              alt="Apex PC weekly offer"
-            >
-          </div>
-
-          <div class="apex-featured-offer__content">
-            <span class="apex-featured-offer__discount">خصم 15%</span>
-
-            <h2>تجميعة Apex Ultra</h2>
-            <p>أداء قوي للألعاب والعمل وصناعة المحتوى.</p>
-
-            <div class="apex-featured-offer__specs">
-              <span>Intel Core i7</span>
-              <span>RTX Graphics</span>
-              <span>32GB DDR5</span>
-              <span>2TB NVMe</span>
-            </div>
-
-            <div class="apex-featured-offer__price">
-              <del>6,799 ر.س</del>
-              <strong>5,749 ر.س</strong>
-            </div>
-
-            <a href="/products" class="apex-home-btn apex-home-btn--primary">
-              أضف إلى السلة
-            </a>
-          </div>
-
-        </div>
       </div>
     </div>
   </section>
 
-  {# Brands #}
+  {# ==================== الماركات المعتمدة ==================== #}
+  {#
+     ضع الشعارات في: src/assets/images/brands/
+     بصيغة PNG بخلفية شفافة وبنفس الأسماء أدناه.
+  #}
   <section class="apex-home-section">
     <div class="container">
-
       <div class="apex-home-heading">
         <div>
           <span>شركاؤنا</span>
           <h2>الماركات المعتمدة</h2>
         </div>
       </div>
+    </div>
 
-      <div class="apex-brands-grid">
-        <div>ASUS</div>
-        <div>MSI</div>
-        <div>Intel</div>
-        <div>AMD</div>
-        <div>NVIDIA</div>
-        <div>Corsair</div>
-        <div>Gigabyte</div>
-        <div>NZXT</div>
-        <div>HyperX</div>
-        <div>Logitech</div>
+    <div class="apex-marquee">
+      <div class="apex-marquee__track">
+        {% for i in 1..2 %}
+          <div class="apex-marquee__group" {% if i == 2 %}aria-hidden="true"{% endif %}>
+            <img src="{{ 'images/brands/asus.png'     | asset }}" alt="ASUS">
+            <img src="{{ 'images/brands/msi.png'      | asset }}" alt="MSI">
+            <img src="{{ 'images/brands/intel.png'    | asset }}" alt="Intel">
+            <img src="{{ 'images/brands/amd.png'      | asset }}" alt="AMD">
+            <img src="{{ 'images/brands/nvidia.png'   | asset }}" alt="NVIDIA">
+            <img src="{{ 'images/brands/corsair.png'  | asset }}" alt="Corsair">
+            <img src="{{ 'images/brands/gigabyte.png' | asset }}" alt="Gigabyte">
+            <img src="{{ 'images/brands/nzxt.png'     | asset }}" alt="NZXT">
+          </div>
+        {% endfor %}
       </div>
-
     </div>
   </section>
 
-  {# Existing Salla products and dynamic components #}
+  {# ==================== الأكثر مبيعًا + مكوّنات سلة ==================== #}
   <section class="apex-home-section apex-best-sellers">
     <div class="container">
       <div class="apex-home-heading">
@@ -392,14 +254,14 @@
     </div>
   </section>
 
-  {# Reviews #}
+  {# ==================== آراء العملاء ==================== #}
   <section class="apex-home-section apex-reviews-section">
     <div class="container">
 
       <div class="apex-home-heading">
         <div>
           <span>آراء حقيقية</span>
-          <h2>تقييمات العملاء</h2>
+          <h2>آراء العملاء</h2>
         </div>
       </div>
 
@@ -443,10 +305,232 @@
     </div>
   </section>
 
+  {# ==================== وثيقة العمل الحر ==================== #}
+  {#
+     ضع شعار العمل الحر في: src/assets/images/freelance.png
+     وبدّل رقم الوثيقة أدناه برقمك الفعلي.
+  #}
+  <section class="apex-home-section">
+    <div class="container">
+      <div class="apex-doc">
+        <img
+          class="apex-doc__logo"
+          src="{{ 'images/freelance.png' | asset }}"
+          alt="وثيقة العمل الحر"
+        >
+        <div class="apex-doc__text">
+          <strong>موثّق بوثيقة العمل الحر</strong>
+          <span>رقم الوثيقة: FL-000000000</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {# ==================== الصفحات التعريفية ==================== #}
+  <section class="apex-home-section">
+    <div class="container">
+      <div class="apex-home-heading">
+        <div>
+          <span>تعرّف علينا</span>
+          <h2>روابط مهمة</h2>
+        </div>
+      </div>
+
+      <div class="apex-links">
+        {% for p in store.pages %}
+          <a href="{{ p.url }}" class="apex-links__item">{{ p.title }}</a>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
 </main>
+
+<style>
+  /* ---------- ابنِ حسب ميزانيتك ---------- */
+  .apex-budget-intro{ max-width:60ch; margin:0 0 32px; opacity:.75; line-height:1.8; }
+
+  .apex-budget-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+  @media (max-width:900px){ .apex-budget-grid{ grid-template-columns:1fr; } }
+
+  .apex-budget-card{
+    position:relative; display:flex; flex-direction:column;
+    padding:30px 26px; border-radius:20px; text-decoration:none; color:inherit;
+    background:linear-gradient(160deg,rgba(139,92,246,.10),rgba(139,92,246,.02));
+    border:1px solid rgba(139,92,246,.22);
+    transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease;
+  }
+  .apex-budget-card:hover{
+    transform:translateY(-6px); border-color:rgba(167,139,250,.65);
+    box-shadow:0 18px 44px rgba(109,40,217,.28);
+  }
+  .apex-budget-card--featured{
+    background:linear-gradient(160deg,rgba(139,92,246,.24),rgba(139,92,246,.06));
+    border-color:rgba(167,139,250,.55);
+  }
+  .apex-budget-card__flag{
+    position:absolute; top:16px; inset-inline-start:22px;
+    font-size:11px; font-weight:700; padding:5px 12px; border-radius:99px;
+    background:#8B5CF6; color:#fff;
+  }
+  .apex-budget-card__tier{ font-size:19px; font-weight:800; margin-bottom:14px; }
+  .apex-budget-card__price{ display:flex; align-items:baseline; gap:7px; margin-bottom:16px; flex-wrap:wrap; }
+  .apex-budget-card__price span{ font-size:13px; opacity:.6; }
+  .apex-budget-card__price strong{ font-size:36px; font-weight:800; line-height:1; color:#C4B5FD; }
+  .apex-budget-card__price em{ font-style:normal; font-size:15px; opacity:.8; }
+  .apex-budget-card p{ font-size:14px; line-height:1.85; opacity:.72; margin:0 0 24px; flex:1; }
+  .apex-budget-card__cta{
+    display:inline-block; align-self:flex-start; padding:11px 22px; border-radius:11px;
+    font-size:14px; font-weight:700;
+    background:rgba(139,92,246,.18); border:1px solid rgba(167,139,250,.45);
+    transition:background .25s ease;
+  }
+  .apex-budget-card:hover .apex-budget-card__cta{ background:#8B5CF6; color:#fff; }
+
+  /* ---------- التصنيفات (بطاقات داكنة عالية التباين) ---------- */
+  .apex-category-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+  @media (max-width:900px){ .apex-category-grid{ grid-template-columns:repeat(2,1fr); } }
+  @media (max-width:560px){ .apex-category-grid{ grid-template-columns:1fr; } }
+
+  .apex-cat{
+    display:block; padding:26px 22px; border-radius:18px; text-decoration:none;
+    background:#171128;
+    border:1px solid rgba(139,92,246,.20);
+    transition:transform .22s ease, border-color .22s ease, background .22s ease;
+  }
+  .apex-cat:hover{
+    transform:translateY(-4px);
+    border-color:rgba(167,139,250,.6);
+    background:#1D1533;
+  }
+  .apex-cat__icon{
+    display:grid; place-items:center; width:52px; height:52px; margin-bottom:16px;
+    font-size:24px; border-radius:14px;
+    background:rgba(139,92,246,.16); border:1px solid rgba(139,92,246,.28);
+  }
+  .apex-cat h3{ margin:0 0 6px; font-size:17px; font-weight:700; color:#F3F0FF; }
+  .apex-cat p{ margin:0; font-size:13.5px; line-height:1.7; color:#A79CC4; }
+
+  /* ---------- عرض الأسبوع ---------- */
+  .apex-weekly{
+    position:relative; overflow:hidden; border-radius:24px; padding:44px 38px;
+    background:linear-gradient(135deg,#1E1338,#2A1650);
+    border:1px solid rgba(167,139,250,.3);
+  }
+  .apex-weekly__text{ position:relative; z-index:2; max-width:640px; }
+  .apex-weekly__label{
+    display:inline-block; font-size:12px; font-weight:700; padding:6px 14px;
+    border-radius:99px; background:#8B5CF6; color:#fff; margin-bottom:14px;
+  }
+  .apex-weekly h2{ margin:0 0 6px; font-size:30px; font-weight:800; }
+  .apex-weekly p{ margin:0 0 22px; opacity:.75; }
+  .apex-weekly__glow{
+    position:absolute; inset-inline-end:-90px; top:-90px;
+    width:340px; height:340px; border-radius:50%;
+    background:radial-gradient(circle,rgba(139,92,246,.55),transparent 68%);
+    z-index:1; pointer-events:none;
+  }
+
+  .apex-countdown{ display:flex; gap:12px; margin-bottom:26px; flex-wrap:wrap; }
+  .apex-countdown > div{
+    min-width:78px; padding:14px 10px; text-align:center; border-radius:14px;
+    background:rgba(0,0,0,.28); border:1px solid rgba(167,139,250,.28);
+  }
+  .apex-countdown strong{
+    display:block; font-size:28px; font-weight:800; line-height:1;
+    color:#C4B5FD; font-variant-numeric:tabular-nums;
+  }
+  .apex-countdown span{ font-size:12px; opacity:.65; }
+
+  /* ---------- شريط الماركات ---------- */
+  .apex-marquee{
+    overflow:hidden; padding:14px 0;
+    -webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);
+            mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);
+  }
+  .apex-marquee__track{ display:flex; width:max-content; animation:apexScroll 32s linear infinite; }
+  .apex-marquee:hover .apex-marquee__track{ animation-play-state:paused; }
+  .apex-marquee__group{ display:flex; align-items:center; gap:56px; padding-inline-end:56px; }
+  .apex-marquee__group img{
+    height:38px; width:auto; object-fit:contain;
+    opacity:.55; filter:grayscale(1) brightness(1.9);
+    transition:opacity .3s ease, filter .3s ease;
+  }
+  .apex-marquee__group img:hover{ opacity:1; filter:none; }
+
+  @keyframes apexScroll{
+    from{ transform:translateX(0); }
+    to  { transform:translateX(-50%); }
+  }
+  @media (prefers-reduced-motion:reduce){
+    .apex-marquee__track{ animation:none; }
+  }
+
+  /* ---------- وثيقة العمل الحر ---------- */
+  .apex-doc{
+    display:flex; align-items:center; gap:18px; flex-wrap:wrap;
+    padding:22px 26px; border-radius:18px;
+    background:rgba(139,92,246,.07); border:1px solid rgba(139,92,246,.22);
+  }
+  .apex-doc__logo{ height:52px; width:auto; object-fit:contain; }
+  .apex-doc__text{ display:flex; flex-direction:column; gap:4px; }
+  .apex-doc__text strong{ font-size:16px; font-weight:700; }
+  .apex-doc__text span{ font-size:13px; opacity:.7; font-variant-numeric:tabular-nums; }
+
+  /* ---------- روابط الصفحات ---------- */
+  .apex-links{ display:flex; flex-wrap:wrap; gap:12px; }
+  .apex-links__item{
+    padding:11px 20px; border-radius:11px; font-size:14px; text-decoration:none;
+    color:inherit; background:rgba(255,255,255,.04);
+    border:1px solid rgba(139,92,246,.22);
+    transition:background .22s ease, border-color .22s ease;
+  }
+  .apex-links__item:hover{ background:rgba(139,92,246,.2); border-color:rgba(167,139,250,.6); }
+</style>
 
 {% endblock %}
 
 {% block scripts %}
   <script defer src="{{ 'home.js' | asset }}"></script>
+
+  <script>
+    // مؤقت أسبوعي: يعدّ حتى نهاية الأسبوع (السبت 00:00) ثم يبدأ من جديد تلقائيًا
+    (function () {
+      var box = document.getElementById('apexCountdown');
+      if (!box) return;
+
+      var out = {
+        days:  box.querySelector('[data-cd="days"]'),
+        hours: box.querySelector('[data-cd="hours"]'),
+        mins:  box.querySelector('[data-cd="mins"]'),
+        secs:  box.querySelector('[data-cd="secs"]')
+      };
+
+      function pad(n) { return n < 10 ? '0' + n : String(n); }
+
+      function nextReset() {
+        var now = new Date();
+        var d = new Date(now);
+        d.setHours(0, 0, 0, 0);
+        // 6 = السبت. غيّر الرقم لتغيير يوم انتهاء العرض (0 = الأحد)
+        var diff = (6 - now.getDay() + 7) % 7 || 7;
+        d.setDate(d.getDate() + diff);
+        return d;
+      }
+
+      function tick() {
+        var left = nextReset() - new Date();
+        if (left < 0) left = 0;
+
+        var s = Math.floor(left / 1000);
+        out.days.textContent  = pad(Math.floor(s / 86400));
+        out.hours.textContent = pad(Math.floor(s % 86400 / 3600));
+        out.mins.textContent  = pad(Math.floor(s % 3600 / 60));
+        out.secs.textContent  = pad(s % 60);
+      }
+
+      tick();
+      setInterval(tick, 1000);
+    })();
+  </script>
 {% endblock %}
