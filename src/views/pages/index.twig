@@ -185,14 +185,27 @@
             <div><strong data-cd="secs">--</strong><span>ثواني</span></div>
           </div>
 
-          <a href="/products" class="apex-home-btn apex-home-btn--primary">
-            مشاهدة العروض
+          <a
+            href="https://apexpc.store/ar/%D8%B9%D8%B1%D9%88%D8%B6%20%D8%A7%D9%84%D8%A3%D8%B3%D8%A8%D9%88%D8%B9/c1411183504"
+            class="apex-home-btn apex-home-btn--primary"
+          >
+            مشاهدة كل العروض
           </a>
         </div>
 
         <div class="apex-weekly__glow"></div>
 
       </div>
+
+      {# منتجات تصنيف «عروض الأسبوع» — تتحدث تلقائيًا من لوحة سلة #}
+      <div class="apex-weekly-products">
+        <salla-products-list
+          source="categories"
+          source-value="[1411183504]"
+          limit="4"
+        ></salla-products-list>
+      </div>
+
     </div>
   </section>
 
@@ -431,6 +444,9 @@
     color:#C4B5FD; font-variant-numeric:tabular-nums;
   }
   .apex-countdown span{ font-size:12px; opacity:.65; }
+
+  .apex-weekly-products{ margin-top:28px; }
+  .apex-weekly-products salla-products-list{ display:block; }
 
   /* ============ شريط الماركات ============ */
   .apex-marquee{
